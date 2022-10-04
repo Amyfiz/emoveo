@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //variables for moving player left and right
     public float playerSpeed;
     public float moveInput;
 
+    //variable for flipping player texture
     public bool facingRight = true;
     
+    //variables for jump
     public float jumpForce;
     public bool isGrounded = true;
     public Transform feetPosition;
@@ -18,11 +21,13 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rigidbody;
 
+    //get component Rigidbody when game started
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
+    
     private void Update()
     {
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
@@ -33,6 +38,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //flipping player texture
     private void PlayerFlip()
     {
         facingRight = !facingRight;
@@ -40,11 +46,13 @@ public class PlayerController : MonoBehaviour
         scaler.x *= -1;
         transform.localScale = scaler;
     }
-
+    
     private void FixedUpdate()
     {
         moveInput = Input.GetAxis("Horizontal");
         rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
+        
+        //flipping player according to side they're facing
         if (facingRight == false && moveInput > 0)
         {
             PlayerFlip();
@@ -52,6 +60,12 @@ public class PlayerController : MonoBehaviour
         else if (facingRight == true && moveInput < 0)
         {
             PlayerFlip();
+        }
+
+        //sprinting when left control is pressed
+        if (isGrounded && moveInput > 0 && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            playerSpeed *= 2;
         }
     }
 }
