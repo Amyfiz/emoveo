@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerTexture/playerBody.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerTexture/playerBody.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerTexture/playerFabric.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerTexture/playerFabric.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerTexture/playerFace.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerTexture/playerFace.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

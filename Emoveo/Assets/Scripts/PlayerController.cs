@@ -39,13 +39,13 @@ public class PlayerController : MonoBehaviour
     }
 
     //flipping player texture
-    private void PlayerFlip()
+    /*private void PlayerFlip()
     {
         facingRight = !facingRight;
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
         transform.localScale = scaler;
-    }
+    }*/
     
     private void FixedUpdate()
     {
@@ -53,14 +53,14 @@ public class PlayerController : MonoBehaviour
         rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
         
         //flipping player according to side they're facing
-        if (facingRight == false && moveInput > 0)
+       /* if (facingRight == false && moveInput > 0)
         {
             PlayerFlip();
         }
         else if (facingRight == true && moveInput < 0)
         {
             PlayerFlip();
-        }
+        }*/
 
         //sprinting when left control is pressed
         if (isGrounded && moveInput > 0 && Input.GetKeyDown(KeyCode.LeftControl))
