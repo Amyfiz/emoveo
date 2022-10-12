@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "Item")]
-public class AssetItem: ScriptableObject, IItem
+public class AssetItem : ScriptableObject, IItem
 {
     public string Name => throw new NotImplementedException();
     public Sprite UIIcon => throw new NotImplementedException();
