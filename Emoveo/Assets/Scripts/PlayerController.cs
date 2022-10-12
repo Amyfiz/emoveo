@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         moveInput = Input.GetAxis("Horizontal");
+        //test
+
         rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
         
         //flipping player according to side they're facing
