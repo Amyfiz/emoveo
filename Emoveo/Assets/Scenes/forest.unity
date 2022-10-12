@@ -345,7 +345,7 @@ MonoBehaviour:
   jumpForce: 5
   isGrounded: 1
   feetPosition: {fileID: 1789852287}
-  checkRadius: 0
+  checkRadius: 0.3
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 64
@@ -1789,7 +1789,7 @@ GameObject:
   - component: {fileID: 914892224}
   - component: {fileID: 914892226}
   - component: {fileID: 914892225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
