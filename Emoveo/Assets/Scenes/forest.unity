@@ -3415,7 +3415,7 @@ GameObject:
   - component: {fileID: 722751867}
   - component: {fileID: 722751868}
   m_Layer: 0
-  m_Name: groundUp 2
+  m_Name: groundUp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7033,7 +7033,7 @@ GameObject:
   - component: {fileID: 1249123353}
   - component: {fileID: 1249123354}
   m_Layer: 0
-  m_Name: groundUp 4
+  m_Name: groundUp4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11534,7 +11534,7 @@ GameObject:
   - component: {fileID: 1825498417}
   - component: {fileID: 1825498418}
   m_Layer: 0
-  m_Name: groundUp 5
+  m_Name: groundUp5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12796,7 +12796,7 @@ GameObject:
   - component: {fileID: 1864908881}
   - component: {fileID: 1864908882}
   m_Layer: 0
-  m_Name: groundUp 3
+  m_Name: groundUp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
