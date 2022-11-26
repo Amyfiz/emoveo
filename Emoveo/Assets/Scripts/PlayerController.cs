@@ -1,41 +1,86 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     //variables for moving player left and right
-    public float playerSpeed;
-    public float moveInput;
+    [SerializeField] private float playerSpeed;
+    [SerializeField] private float sprintForce;
+    [SerializeField] private float dashForce;
+
+    public float startDashTimer;
+    public float currentDashTimer;
+    
+    [SerializeField] private float moveInput;
+
+    [SerializeField] private bool isSprinting;
+    [SerializeField] private bool isDashing;
 
     //variable for flipping player texture
-    public bool facingRight = true;
+    [SerializeField] private bool facingRight = true;
     
     //variables for jump
-    public float jumpForce;
-    public bool isGrounded = true;
-    public Transform feetPosition;
-    public float checkRadius;
-    public LayerMask whatIsGrounded;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private bool isGrounded = true;
+    [SerializeField] private Transform feetPosition;
+    [SerializeField] private float checkRadius;
+    [SerializeField] private LayerMask whatIsGrounded;
 
     private Rigidbody2D rigidbody;
 
     //get component Rigidbody when game started
-    private void Start()
+    private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
+
+    private void Sprint()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing)
+        {
+            playerSpeed += sprintForce;
+            isSprinting = true;
+        }
+        
+        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting)
+        {
+            playerSpeed -= sprintForce;
+            isSprinting = false;
+        }
+    }
+    
+    private void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting)
+        {
+            isDashing = true;
+            currentDashTimer = startDashTimer;
+            
+            playerSpeed += dashForce;
+        }
+        
+        if (isDashing)
+        {
+            currentDashTimer -= Time.deltaTime;
+
+            if (currentDashTimer <= 0)
+            {
+                isDashing = false;
+                playerSpeed -= dashForce;
+            }
+        }
     }
 
-    
     private void Update()
     {
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
 
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody.velocity = Vector2.up * jumpForce;
         }
+
+        rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
+        
+        Sprint();
+        Dash();
     }
 
     //flipping player texture
@@ -46,28 +91,19 @@ public class PlayerController : MonoBehaviour
         scaler.x *= -1;
         transform.localScale = scaler;
     }
-    
+
     private void FixedUpdate()
     {
         moveInput = Input.GetAxis("Horizontal");
-        //test
 
-        rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
-        
         //flipping player according to side they're facing
        if (facingRight == false && moveInput > 0)
         {
             PlayerFlip();
         }
-        else if (facingRight == true && moveInput < 0)
+        else if (facingRight && moveInput < 0)
         {
             PlayerFlip();
-        }
-
-        //sprinting when left control is pressed
-        if (isGrounded && moveInput > 0 && Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            playerSpeed *= 2;
         }
     }
 }

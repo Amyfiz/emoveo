@@ -760,12 +760,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 5
+  sprintForce: 5
+  dashForce: 10
+  startDashTimer: 0.25
+  currentDashTimer: 0
   moveInput: 0
+  isSprinting: 0
+  isDashing: 0
   facingRight: 1
-  jumpForce: 5
+  jumpForce: 4
   isGrounded: 1
   feetPosition: {fileID: 1789852287}
-  checkRadius: 0.3
+  checkRadius: 0.2
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 64
