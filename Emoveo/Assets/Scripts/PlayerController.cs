@@ -4,11 +4,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //variables for moving player left and right
-    [SerializeField] private float currentSpeed;
-
     [SerializeField] private float playerSpeed;
-    [SerializeField] private float playerSprintSpeed;
+    [SerializeField] private float sprintForce;
+    [SerializeField] private float dashForce;
+
+    public float startDashTimer;
+    public float currentDashTimer;
+    
     [SerializeField] private float moveInput;
+
+    [SerializeField] private bool isSprinting;
+    [SerializeField] private bool isDashing;
 
     //variable for flipping player texture
     [SerializeField] private bool facingRight = true;
@@ -24,19 +30,41 @@ public class PlayerController : MonoBehaviour
 
     //get component Rigidbody when game started
     private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
-    
-    private void Move()
+
+    private void Sprint()
     {
-        if (isGrounded && moveInput != 0 && Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing)
         {
-            rigidbody.velocity = new Vector2(moveInput * playerSprintSpeed, rigidbody.velocity.y);
-            currentSpeed = playerSprintSpeed;
-            print("WIIIIIIIIIIIIIIIIIIIOOOOOOOOOOO");
+            playerSpeed += sprintForce;
+            isSprinting = true;
         }
-        else
+        
+        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting)
         {
-            rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
-            currentSpeed = playerSpeed;
+            playerSpeed -= sprintForce;
+            isSprinting = false;
+        }
+    }
+    
+    private void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting)
+        {
+            isDashing = true;
+            currentDashTimer = startDashTimer;
+            
+            playerSpeed += dashForce;
+        }
+        
+        if (isDashing)
+        {
+            currentDashTimer -= Time.deltaTime;
+
+            if (currentDashTimer <= 0)
+            {
+                isDashing = false;
+                playerSpeed -= dashForce;
+            }
         }
     }
 
@@ -49,7 +77,10 @@ public class PlayerController : MonoBehaviour
             rigidbody.velocity = Vector2.up * jumpForce;
         }
 
-        Move();
+        rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
+        
+        Sprint();
+        Dash();
     }
 
     //flipping player texture
@@ -64,9 +95,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         moveInput = Input.GetAxis("Horizontal");
-        //test
-        
-        //Move();
 
         //flipping player according to side they're facing
        if (facingRight == false && moveInput > 0)
