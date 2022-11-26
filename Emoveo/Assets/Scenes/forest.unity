@@ -761,6 +761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 5
   moveInput: 0
+  playerSprintSpeed: 10
   facingRight: 1
   jumpForce: 4
   isGrounded: 1
