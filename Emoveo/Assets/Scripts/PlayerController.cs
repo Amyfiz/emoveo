@@ -1,33 +1,27 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     //variables for moving player left and right
-    public float playerSpeed;
-    public float moveInput;
+    [SerializeField] private float playerSpeed;
+    [SerializeField] private float moveInput;
 
     //variable for flipping player texture
-    public bool facingRight = true;
+    [SerializeField] private bool facingRight = true;
     
     //variables for jump
-    public float jumpForce;
-    public bool isGrounded = true;
-    public Transform feetPosition;
-    public float checkRadius;
-    public LayerMask whatIsGrounded;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private bool isGrounded = true;
+    [SerializeField] private Transform feetPosition;
+    [SerializeField] private float checkRadius;
+    [SerializeField] private LayerMask whatIsGrounded;
 
     private Rigidbody2D rigidbody;
 
     //get component Rigidbody when game started
-    private void Start()
-    {
-        rigidbody = GetComponent<Rigidbody2D>();
-    }
+    private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
 
-    
     private void Update()
     {
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
