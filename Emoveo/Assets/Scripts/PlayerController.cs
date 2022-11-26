@@ -96,8 +96,14 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = Input.GetAxis("Horizontal");
 
+        //keeping player on the same Y while dashing
+        if (isDashing)
+        {
+            rigidbody.velocity = new Vector2(moveInput * playerSpeed, 0);
+        }
+
         //flipping player according to side they're facing
-       if (facingRight == false && moveInput > 0)
+       if (!facingRight && moveInput > 0)
         {
             PlayerFlip();
         }
