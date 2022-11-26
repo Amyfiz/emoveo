@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +23,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FcZerJ2GVrLtWga13Ox5MlZtKv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -98,6 +103,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
