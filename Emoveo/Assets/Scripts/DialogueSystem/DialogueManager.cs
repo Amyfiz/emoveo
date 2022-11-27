@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +11,14 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
+
     public bool isDialogueOpen = false;
+    //public int timeout = 5;
 
     public Animator animator;
     
     public Queue<string> SentenceQueue;
+    public Queue<int> TimeoutQueue;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +64,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return null;
+            Thread.Sleep(5);
         }
     }
 
