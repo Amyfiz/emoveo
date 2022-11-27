@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    public bool isDialogueOpen = false;
 
     public Animator animator;
     
@@ -22,7 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting conversation with " + dialogue.name);
+        isDialogueOpen = true;
         
         animator.SetBool("IsOpen", true);
 
@@ -64,5 +65,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+
+        isDialogueOpen = false;
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class DialogueAnimator : MonoBehaviour
 {
+    public bool destroyWhenActivated;
+
     public Animator startAnimation;
     public DialogueManager dialogueManager;
 
@@ -20,5 +22,10 @@ public class DialogueAnimator : MonoBehaviour
     {
         startAnimation.SetBool("IsOpen", false);
         dialogueManager.EndDialogue();
+        
+        if (destroyWhenActivated)
+        {
+            Destroy(gameObject);
+        }
     }
 }
