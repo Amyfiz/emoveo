@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Dialogue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Dialogue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxBackground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parallax/ParallaxLayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +84,7 @@
       <workItem from="1664793437725" duration="3552000" />
       <workItem from="1669416483336" duration="317000" />
       <workItem from="1669453358467" duration="11396000" />
+      <workItem from="1669548967128" duration="545000" />
     </task>
     <servers />
   </component>
