@@ -50,3 +50,6 @@ TagManager:
   - name: FG
     uniqueID: 1056385407
     locked: 0
+  - name: DialogueBox
+    uniqueID: 1254715827
+    locked: 0
