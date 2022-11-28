@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
-[System.Serializable]
-public class DialogueEntity
+[CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue", order = 1)]
+public class DialogueEntity: ScriptableObject
 {
     public string name;
-    public bool destroyWhenActivated;
+    public bool destroyWhenActivated = false;
     public bool isAbleToWalk;
     public float timeout;
 

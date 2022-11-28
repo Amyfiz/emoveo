@@ -32,6 +32,5 @@ public class DialogueAnimator : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
     }
 }

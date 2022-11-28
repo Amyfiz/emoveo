@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/AnimatorConstants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/AnimatorConstants.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/1ForestSpark.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/1ForestSpark.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/6ForestSpark.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/6ForestSpark.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Dialogue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/forest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +98,7 @@
       <workItem from="1669416483336" duration="317000" />
       <workItem from="1669453358467" duration="11396000" />
       <workItem from="1669548967128" duration="3494000" />
-      <workItem from="1669651570529" duration="10654000" />
+      <workItem from="1669651570529" duration="12200000" />
     </task>
     <servers />
   </component>
@@ -110,24 +122,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs</url>
-          <line>71</line>
-          <properties documentPath="E:\Projects\emoveo\Emoveo\Assets\Scripts\DialogueSystem\DialogueManager.cs" initialLine="71" containingFunctionPresentation="method 'DisplayNextSentence'">
-            <startOffsets>
-              <option value="1520" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1549" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
