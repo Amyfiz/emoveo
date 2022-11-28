@@ -4,8 +4,7 @@ using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool abilityToMove = true;
-    public DialogueManager dialogueManager;
+    public bool abilityToMove;
 
     //variables for moving player left and right
     [SerializeField] private float playerSpeed;

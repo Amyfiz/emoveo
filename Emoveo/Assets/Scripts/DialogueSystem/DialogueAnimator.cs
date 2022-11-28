@@ -6,10 +6,6 @@ using UnityEngine.Serialization;
 
 public class DialogueAnimator : MonoBehaviour
 {
-    //public bool destroyWhenActivated;
-    //public int timeout;
-    public DialogueController dialogueController;
-
     public Animator startAnimation;
     public DialogueManager dialogueManager;
 
@@ -26,7 +22,7 @@ public class DialogueAnimator : MonoBehaviour
         startAnimation.SetBool("IsOpen", false);
         dialogueManager.EndDialogue();
         
-        if (dialogueController.destroyWhenActivated)
+        if (dialogueManager.destroyWhenActivated)
         {
             Destroy(gameObject);
         }

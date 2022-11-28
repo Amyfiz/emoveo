@@ -12,10 +12,13 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     
-    //public DialogueController dialogueController;
     public bool isDialogueOpen = false;
+
+    public PlayerController playerController;
+    public bool destroyWhenActivated;
+    public bool isAbleToWalk;
     public float timeout;
-    
+
     public Animator animator;
     
     public Queue<string> SentenceQueue;
@@ -31,6 +34,11 @@ public class DialogueManager : MonoBehaviour
         isDialogueOpen = true;
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
+
+        if (!isAbleToWalk)
+        {
+            playerController.abilityToMove = false;
+        }
 
         SentenceQueue.Clear();
 
@@ -69,6 +77,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        playerController.abilityToMove = true;
         isDialogueOpen = false;
     }
 }
