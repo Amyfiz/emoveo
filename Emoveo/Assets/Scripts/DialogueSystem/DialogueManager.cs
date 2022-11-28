@@ -63,7 +63,6 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(timeout);
-            //Thread.Sleep(timeout);
         }
     }
 
