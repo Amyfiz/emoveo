@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
 
     //public int timeout;
 
-    //public Animator animator;
+    public Animator animator;
     
     public Queue<string> SentenceQueue;
 
@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue, int timeout)
     {
         isDialogueOpen = true;
+        animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
         
         SentenceQueue.Clear();
@@ -68,6 +69,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        animator.SetBool("IsOpen", false);
         isDialogueOpen = false;
     }
 }

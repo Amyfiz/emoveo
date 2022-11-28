@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
             rigidbody.velocity = Vector2.up * jumpForce;
         }
         
-        if (dialogueManager.isDialogueOpen == true)
+        if (dialogueManager.isDialogueOpen)
         {
             abilityToWalk = false;
         }
@@ -123,11 +123,11 @@ public class PlayerController : MonoBehaviour
         
 
         //flipping player according to side they're facing
-       if (!facingRight && moveInput > 0)
+       if (!facingRight && moveInput > 0 && abilityToWalk)
         {
             PlayerFlip();
         }
-        else if (facingRight && moveInput < 0)
+        else if (facingRight && moveInput < 0 && abilityToWalk)
         {
             PlayerFlip();
         }

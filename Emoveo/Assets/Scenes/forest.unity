@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyWhenActivated: 1
-  timeout: 0
+  timeout: 10
   startAnimation: {fileID: 1029217100}
   dialogueManager: {fileID: 1851717474}
   dialogue:
@@ -4504,6 +4504,7 @@ MonoBehaviour:
   nameText: {fileID: 629958747}
   dialogueText: {fileID: 1397066946}
   isDialogueOpen: 0
+  animator: {fileID: 1029217100}
 --- !u!114 &886397696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4517,7 +4518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyWhenActivated: 1
-  timeout: 0
+  timeout: 100
   startAnimation: {fileID: 1029217100}
   dialogueManager: {fileID: 886397695}
   dialogue:
@@ -10669,11 +10670,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1851717474}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11759,7 +11760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyWhenActivated: 1
-  timeout: 0
+  timeout: 10
   startAnimation: {fileID: 1029217100}
   dialogueManager: {fileID: 1851717474}
   dialogue:
@@ -15668,6 +15669,7 @@ MonoBehaviour:
   nameText: {fileID: 629958747}
   dialogueText: {fileID: 1397066946}
   isDialogueOpen: 0
+  animator: {fileID: 1029217100}
 --- !u!4 &1851717475
 Transform:
   m_ObjectHideFlags: 0
