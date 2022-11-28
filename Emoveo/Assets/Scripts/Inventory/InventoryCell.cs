@@ -1,16 +1,34 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryCell : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _nameField;
-    [SerializeField] private Image _iconField;
+    private Inventory inventory;
+    public int i;
 
-    public void Render(IItem item)
+    private void Start()
     {
-        _nameField.text = item.Name;
-        _iconField.sprite = item.UIIcon;
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+    }
+
+    private void Update()
+    {
+        if (transform.childCount <= 0)
+        {
+            inventory.isFull[i] = false;
+        }
+    }
+
+    public void DropItem()
+    {
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<Spawn>().SpawnDroppedItem();
+            GameObject.Destroy(child.gameObject);
+        }
     }
 }
 
