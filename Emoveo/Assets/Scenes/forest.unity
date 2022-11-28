@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95564fd9ee4949f997892339d4421d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityToWalk: 1
+  abilityToMove: 1
   dialogueManager: {fileID: 1851717474}
   playerSpeed: 5
   sprintForce: 5
@@ -1551,87 +1551,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &456569906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 456569907}
-  - component: {fileID: 456569909}
-  - component: {fileID: 456569908}
-  m_Layer: 0
-  m_Name: TriggerPoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &456569907
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456569906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1618502278}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &456569908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456569906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d5c0974ab8b3744b98d1c9d7891429, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyWhenActivated: 1
-  timeout: 10
-  startAnimation: {fileID: 1029217100}
-  dialogueManager: {fileID: 1851717474}
-  dialogue:
-    name: ???
-    sentences:
-    - "\u041D\u0435 \u0432\u043E\u043B\u043D\u0443\u0439\u0441\u044F, \u044F \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E
-      \u0442\u043E\u043B\u044C\u043A\u043E \u0432 \u0442\u0432\u043E\u0435\u0439
-      \u0433\u043E\u043B\u043E\u0432\u0435..."
---- !u!61 &456569909
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456569906}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 32.711548, y: 2.8459344}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 14.81188, y: 12.119}
-  m_EdgeRadius: 0
 --- !u!1 &459486697
 GameObject:
   m_ObjectHideFlags: 0
@@ -4455,102 +4374,6 @@ Transform:
   m_Father: {fileID: 1270336246}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &886397693
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 886397694}
-  - component: {fileID: 886397697}
-  - component: {fileID: 886397696}
-  - component: {fileID: 886397695}
-  m_Layer: 0
-  m_Name: TriggerPoint4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &886397694
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886397693}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1618502278}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &886397695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886397693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6111626e2ef2084784cc545d2f5d567, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 629958747}
-  dialogueText: {fileID: 1397066946}
-  isDialogueOpen: 0
-  animator: {fileID: 1029217100}
---- !u!114 &886397696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886397693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d5c0974ab8b3744b98d1c9d7891429, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyWhenActivated: 1
-  timeout: 100
-  startAnimation: {fileID: 1029217100}
-  dialogueManager: {fileID: 886397695}
-  dialogue:
-    name: ???
-    sentences:
-    - ". . . \u043F \u043E \u043A \u0430   \u0447 \u0442 \u043E :)"
---- !u!61 &886397697
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886397693}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 49.459747, y: 2.880756}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 16.174683, y: 12.117284}
-  m_EdgeRadius: 0
 --- !u!1 &900194968
 GameObject:
   m_ObjectHideFlags: 0
@@ -10670,7 +10493,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1851717474}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10690,7 +10513,6 @@ GameObject:
   - component: {fileID: 1029217096}
   - component: {fileID: 1029217098}
   - component: {fileID: 1029217097}
-  - component: {fileID: 1029217099}
   - component: {fileID: 1029217100}
   m_Layer: 5
   m_Name: DialogueBox
@@ -10760,23 +10582,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029217095}
   m_CullTransparentMesh: 1
---- !u!114 &1029217099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029217095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be4e4e68b97dde4c9977a0895e18bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 
-  dialogueAnimator: {fileID: 0}
 --- !u!95 &1029217100
 Animator:
   serializedVersion: 4
@@ -11759,8 +11564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d5c0974ab8b3744b98d1c9d7891429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyWhenActivated: 1
-  timeout: 10
+  dialogueController: {fileID: 0}
   startAnimation: {fileID: 1029217100}
   dialogueManager: {fileID: 1851717474}
   dialogue:
@@ -13649,8 +13453,6 @@ Transform:
   m_Children:
   - {fileID: 2133651524}
   - {fileID: 1238465290}
-  - {fileID: 456569907}
-  - {fileID: 886397694}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15647,6 +15449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1851717475}
   - component: {fileID: 1851717474}
+  - component: {fileID: 1851717476}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -15669,6 +15472,7 @@ MonoBehaviour:
   nameText: {fileID: 629958747}
   dialogueText: {fileID: 1397066946}
   isDialogueOpen: 0
+  timeout: 0
   animator: {fileID: 1029217100}
 --- !u!4 &1851717475
 Transform:
@@ -15685,6 +15489,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1851717476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851717473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec2973f1ac134415b05fecc232e9f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 174556337}
+  dialogueManager: {fileID: 0}
+  destroyWhenActivated: 1
+  isAbleToMove: 0
+  timeout: 10
 --- !u!1 &1864679574
 GameObject:
   m_ObjectHideFlags: 0
@@ -16767,6 +16588,7 @@ GameObject:
   - component: {fileID: 2133651524}
   - component: {fileID: 2133651523}
   - component: {fileID: 2133651522}
+  - component: {fileID: 2133651525}
   m_Layer: 0
   m_Name: TriggerPoint1
   m_TagString: Untagged
@@ -16786,8 +16608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d5c0974ab8b3744b98d1c9d7891429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyWhenActivated: 1
-  timeout: 10
+  dialogueController: {fileID: 2133651525}
   startAnimation: {fileID: 1029217100}
   dialogueManager: {fileID: 1851717474}
   dialogue:
@@ -16801,10 +16622,10 @@ MonoBehaviour:
       \u0441\u0432\u043E\u0435 \u0442\u0435\u043B\u043E \u043D\u0430\u0436\u0438\u043C\u0430\u044F
       A \u0438 D"
     - "\u041D\u0443 \u0436\u0435..."
-    - "\u042F \u0442\u0435\u0431\u044F \u043D\u0435 \u0434\u0435\u0440\u0436\u0443
-      :)"
     - "\u0421\u0434\u0435\u043B\u0430\u0439 \u043F\u0435\u0440\u0432\u044B\u0435
       \u0448\u0430\u0433\u0438"
+    - "\u042F \u0442\u0435\u0431\u044F \u043D\u0435 \u0434\u0435\u0440\u0436\u0443
+      :)"
 --- !u!61 &2133651523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16846,3 +16667,20 @@ Transform:
   m_Father: {fileID: 1618502278}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2133651525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133651521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec2973f1ac134415b05fecc232e9f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 174556337}
+  dialogueManager: {fileID: 1851717474}
+  destroyWhenActivated: 1
+  isAbleToMove: 1
+  timeout: 0.02

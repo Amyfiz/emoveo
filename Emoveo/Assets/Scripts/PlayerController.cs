@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool abilityToWalk = true;
+    public bool abilityToMove = true;
     public DialogueManager dialogueManager;
-    
+
     //variables for moving player left and right
     [SerializeField] private float playerSpeed;
     [SerializeField] private float sprintForce;
@@ -36,13 +37,13 @@ public class PlayerController : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing && abilityToWalk)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing && abilityToMove)
         {
             playerSpeed += sprintForce;
             isSprinting = true;
         }
         
-        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting && abilityToWalk)
+        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting && abilityToMove)
         {
             playerSpeed -= sprintForce;
             isSprinting = false;
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
     
     private void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting && abilityToWalk)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting && abilityToMove)
         {
             isDashing = true;
             currentDashTimer = startDashTimer;
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
             playerSpeed += dashForce;
         }
         
-        if (isDashing && abilityToWalk)
+        if (isDashing && abilityToMove)
         {
             currentDashTimer -= Time.deltaTime;
 
@@ -75,21 +76,12 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
 
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space) && abilityToWalk)
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space) && abilityToMove)
         {
             rigidbody.velocity = Vector2.up * jumpForce;
         }
-        
-        if (dialogueManager.isDialogueOpen)
-        {
-            abilityToWalk = false;
-        }
-        else
-        {
-            abilityToWalk = true;
-        }
 
-        if (abilityToWalk)
+        if (abilityToMove)
         {
             rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
         }
@@ -101,7 +93,7 @@ public class PlayerController : MonoBehaviour
     //flipping player texture
     private void PlayerFlip()
     {
-        if (abilityToWalk)
+        if (abilityToMove)
         {
             facingRight = !facingRight;
             Vector3 scaler = transform.localScale;
@@ -123,11 +115,11 @@ public class PlayerController : MonoBehaviour
         
 
         //flipping player according to side they're facing
-       if (!facingRight && moveInput > 0 && abilityToWalk)
+       if (!facingRight && moveInput > 0 && abilityToMove)
         {
             PlayerFlip();
         }
-        else if (facingRight && moveInput < 0 && abilityToWalk)
+        else if (facingRight && moveInput < 0 && abilityToMove)
         {
             PlayerFlip();
         }

@@ -11,11 +11,11 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
-
+    
+    //public DialogueController dialogueController;
     public bool isDialogueOpen = false;
-
-    //public int timeout;
-
+    public float timeout;
+    
     public Animator animator;
     
     public Queue<string> SentenceQueue;
@@ -26,12 +26,12 @@ public class DialogueManager : MonoBehaviour
         SentenceQueue = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue, int timeout)
+    public void StartDialogue(Dialogue dialogue)
     {
         isDialogueOpen = true;
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
-        
+
         SentenceQueue.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -39,10 +39,10 @@ public class DialogueManager : MonoBehaviour
             SentenceQueue.Enqueue(sentence);
         }
 
-        DisplayNextSentence(timeout);
+        DisplayNextSentence();
     }
 
-    public void DisplayNextSentence(int timeout)
+    public void DisplayNextSentence()
     {
         if (SentenceQueue.Count == 0)
         {
@@ -53,17 +53,17 @@ public class DialogueManager : MonoBehaviour
         string sentence = SentenceQueue.Dequeue();
         StopAllCoroutines();
         
-        StartCoroutine(TypeSentence(sentence, timeout));
+        StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence(string sentence, int timeout)
+    IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
         foreach (var letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
-            Thread.Sleep(timeout);
+            yield return new WaitForSeconds(timeout);
+            //Thread.Sleep(timeout);
         }
     }
 

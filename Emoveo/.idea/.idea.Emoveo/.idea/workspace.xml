@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/forest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Dialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
