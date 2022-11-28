@@ -1,8 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool abilityToMove;
+
     //variables for moving player left and right
     [SerializeField] private float playerSpeed;
     [SerializeField] private float sprintForce;
@@ -33,13 +36,13 @@ public class PlayerController : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing && abilityToMove)
         {
             playerSpeed += sprintForce;
             isSprinting = true;
         }
         
-        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting)
+        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting && abilityToMove)
         {
             playerSpeed -= sprintForce;
             isSprinting = false;
@@ -48,7 +51,7 @@ public class PlayerController : MonoBehaviour
     
     private void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting && abilityToMove)
         {
             isDashing = true;
             currentDashTimer = startDashTimer;
@@ -56,7 +59,7 @@ public class PlayerController : MonoBehaviour
             playerSpeed += dashForce;
         }
         
-        if (isDashing)
+        if (isDashing && abilityToMove)
         {
             currentDashTimer -= Time.deltaTime;
 
@@ -72,13 +75,16 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
 
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space) && abilityToMove)
         {
             rigidbody.velocity = Vector2.up * jumpForce;
         }
 
-        rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
-        
+        if (abilityToMove)
+        {
+            rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
+        }
+
         Sprint();
         Dash();
     }
@@ -86,10 +92,13 @@ public class PlayerController : MonoBehaviour
     //flipping player texture
     private void PlayerFlip()
     {
-        facingRight = !facingRight;
-        Vector3 scaler = transform.localScale;
-        scaler.x *= -1;
-        transform.localScale = scaler;
+        if (abilityToMove)
+        {
+            facingRight = !facingRight;
+            Vector3 scaler = transform.localScale;
+            scaler.x *= -1;
+            transform.localScale = scaler;
+        }
     }
 
     private void FixedUpdate()
@@ -102,12 +111,14 @@ public class PlayerController : MonoBehaviour
             rigidbody.velocity = new Vector2(moveInput * playerSpeed, 0);
         }
 
+        
+
         //flipping player according to side they're facing
-       if (!facingRight && moveInput > 0)
+       if (!facingRight && moveInput > 0 && abilityToMove)
         {
             PlayerFlip();
         }
-        else if (facingRight && moveInput < 0)
+        else if (facingRight && moveInput < 0 && abilityToMove)
         {
             PlayerFlip();
         }
