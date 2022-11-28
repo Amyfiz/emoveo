@@ -13,12 +13,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
 
     public bool isDialogueOpen = false;
-    //public int timeout = 5;
 
-    public Animator animator;
+    //public int timeout;
+
+    //public Animator animator;
     
     public Queue<string> SentenceQueue;
-    public Queue<int> TimeoutQueue;
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +26,9 @@ public class DialogueManager : MonoBehaviour
         SentenceQueue = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, int timeout)
     {
         isDialogueOpen = true;
-        
-        animator.SetBool("IsOpen", true);
-
         nameText.text = dialogue.name;
         
         SentenceQueue.Clear();
@@ -41,10 +38,10 @@ public class DialogueManager : MonoBehaviour
             SentenceQueue.Enqueue(sentence);
         }
 
-        DisplayNextSentence();
+        DisplayNextSentence(timeout);
     }
 
-    public void DisplayNextSentence()
+    public void DisplayNextSentence(int timeout)
     {
         if (SentenceQueue.Count == 0)
         {
@@ -54,24 +51,23 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = SentenceQueue.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        
+        StartCoroutine(TypeSentence(sentence, timeout));
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string sentence, int timeout)
     {
         dialogueText.text = "";
         foreach (var letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;
-            Thread.Sleep(5);
+            Thread.Sleep(timeout);
         }
     }
 
     public void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
-
         isDialogueOpen = false;
     }
 }

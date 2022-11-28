@@ -6,6 +6,7 @@ using UnityEngine;
 public class DialogueAnimator : MonoBehaviour
 {
     public bool destroyWhenActivated;
+    public int timeout;
 
     public Animator startAnimation;
     public DialogueManager dialogueManager;
@@ -15,7 +16,7 @@ public class DialogueAnimator : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         startAnimation.SetBool("IsOpen", true);
-        dialogueManager.StartDialogue(dialogue);
+        dialogueManager.StartDialogue(dialogue, timeout);
     }
     
     public void OnTriggerExit2D(Collider2D other)
