@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using DialogueSystem;
 using TMPro;
 using Unity.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,34 +18,49 @@ public class DialogueManager : MonoBehaviour
     public bool isDialogueOpen = false;
 
     public PlayerController playerController;
-    public bool destroyWhenActivated;
-    public bool isAbleToWalk;
-    public float timeout;
 
     public Animator animator;
     
     public Queue<string> SentenceQueue;
 
-    // Start is called before the first frame update
+    public DialogueEntity currentDialogueEntity;
+
+    private static DialogueManager instance;
+    public static DialogueManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         SentenceQueue = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(DialogueEntity dialogueEntity)
     {
         isDialogueOpen = true;
-        animator.SetBool("IsOpen", true);
-        nameText.text = dialogue.name;
 
-        if (!isAbleToWalk)
+        currentDialogueEntity = dialogueEntity;
+        
+        animator.SetBool(AnimatorConstants.IsOpen, true);
+        nameText.text = currentDialogueEntity.name;
+
+        if (!currentDialogueEntity.isAbleToWalk)
         {
             playerController.abilityToMove = false;
         }
 
         SentenceQueue.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in currentDialogueEntity.sentences)
         {
             SentenceQueue.Enqueue(sentence);
         }
@@ -59,8 +77,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = SentenceQueue.Dequeue();
-        StopAllCoroutines();
         
+        StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
 
@@ -70,14 +88,16 @@ public class DialogueManager : MonoBehaviour
         foreach (var letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(timeout);
+            yield return new WaitForSeconds(currentDialogueEntity.timeout);
         }
     }
 
     public void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        currentDialogueEntity = null;
+        animator.SetBool(AnimatorConstants.IsOpen, false);
         playerController.abilityToMove = true;
+        StopAllCoroutines();
         isDialogueOpen = false;
     }
 }
