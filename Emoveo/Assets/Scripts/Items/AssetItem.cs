@@ -5,11 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Item")]
 public class AssetItem : ScriptableObject, IItem
 {
-    public string Name => throw new NotImplementedException();
-    public Sprite UIIcon => throw new NotImplementedException();
+    public string Name => _name;
+    public Sprite UIIcon => _uiIcon;
 
     [SerializeField] private string _name;
-    [SerializeField] private Texture2D _uiIcon;
+    [SerializeField] private Sprite _uiIcon;
 }
 
 
