@@ -31,8 +31,16 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rigidbody;
 
+    private Animator animator;
+    
+
     //get component Rigidbody when game started
-    private void Awake() => rigidbody = GetComponent<Rigidbody2D>();
+    private void Awake()
+    {
+        rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+
 
     private void Sprint()
     {
@@ -83,6 +91,12 @@ public class PlayerController : MonoBehaviour
         if (abilityToMove)
         {
             rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
+            animator.SetBool("IsMoving", moveInput * playerSpeed != 0);
+        }
+
+        if (!abilityToMove && moveInput == 0)
+        {
+            animator.SetBool("IsMoving", false);
         }
 
         Sprint();
