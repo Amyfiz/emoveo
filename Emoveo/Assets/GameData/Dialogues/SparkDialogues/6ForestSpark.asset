@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6db269b94e9c14ea35337a1b346c6b, type: 3}
   m_Name: 6ForestSpark
   m_EditorClassIdentifier: 
-  name: :)
+  name: ...
   destroyWhenActivated: 1
   isAbleToWalk: 0
   timeout: 0.1
   sentences:
-  - ". . . \u043F \u043E \u043A \u0430   \u0447 \u0442 \u043E                :)"
+  - ". . . \u043F \u043E \u043A \u0430   \u0447 \u0442 \u043E\n\n                                                      
+    :)"

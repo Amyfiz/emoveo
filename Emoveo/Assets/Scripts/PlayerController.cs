@@ -5,6 +5,8 @@ using UnityEngine.Serialization;
 public class PlayerController : MonoBehaviour
 {
     public bool abilityToMove;
+    public bool abilityToSprint;
+    public bool abilityToDash;
 
     //variables for moving player left and right
     [SerializeField] private float playerSpeed;
@@ -30,7 +32,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask whatIsGrounded;
 
     private Rigidbody2D rigidbody;
-
     private Animator animator;
     
 
@@ -44,13 +45,13 @@ public class PlayerController : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing && abilityToMove)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing && abilityToMove && abilityToSprint)
         {
             playerSpeed += sprintForce;
             isSprinting = true;
         }
         
-        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting && abilityToMove)
+        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting && abilityToMove && abilityToSprint)
         {
             playerSpeed -= sprintForce;
             isSprinting = false;
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
     
     private void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting && abilityToMove)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting && abilityToMove && abilityToDash)
         {
             isDashing = true;
             currentDashTimer = startDashTimer;
@@ -67,7 +68,7 @@ public class PlayerController : MonoBehaviour
             playerSpeed += dashForce;
         }
         
-        if (isDashing && abilityToMove)
+        if (isDashing && abilityToMove && abilityToDash)
         {
             currentDashTimer -= Time.deltaTime;
 

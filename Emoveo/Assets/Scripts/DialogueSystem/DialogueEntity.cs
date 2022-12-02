@@ -7,7 +7,7 @@ using UnityEngine;
 public class DialogueEntity: ScriptableObject
 {
     public string name;
-    public bool destroyWhenActivated = false;
+    public bool destroyWhenActivated;
     public bool isAbleToWalk;
     public float timeout;
 

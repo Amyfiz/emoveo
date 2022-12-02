@@ -15,17 +15,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     
-    public bool isDialogueOpen = false;
-
     public PlayerController playerController;
-
     public Animator animator;
-    
     public Queue<string> SentenceQueue;
-
     public DialogueEntity currentDialogueEntity;
-
     private static DialogueManager instance;
+
     public static DialogueManager Instance
     {
         get
@@ -46,8 +41,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueEntity dialogueEntity)
     {
-        isDialogueOpen = true;
-
         currentDialogueEntity = dialogueEntity;
         
         animator.SetBool(AnimatorConstants.IsOpen, true);
@@ -91,6 +84,8 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(currentDialogueEntity.timeout);
         }
     }
+    
+    
 
     public void EndDialogue()
     {
@@ -98,6 +93,6 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool(AnimatorConstants.IsOpen, false);
         playerController.abilityToMove = true;
         StopAllCoroutines();
-        isDialogueOpen = false;
+        animator.SetBool(AnimatorConstants.IsOpen, false);
     }
 }
