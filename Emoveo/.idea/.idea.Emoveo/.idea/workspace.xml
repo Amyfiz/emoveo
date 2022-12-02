@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/forest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/CloseDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/CloseDialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +99,7 @@
       <workItem from="1669651570529" duration="12200000" />
       <workItem from="1669758868159" duration="2977000" />
       <workItem from="1669831274214" duration="398000" />
-      <workItem from="1669975238758" duration="6758000" />
+      <workItem from="1669975238758" duration="10967000" />
     </task>
     <servers />
   </component>
