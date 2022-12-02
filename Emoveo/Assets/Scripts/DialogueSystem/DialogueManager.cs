@@ -91,6 +91,8 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(currentDialogueEntity.timeout);
         }
     }
+    
+    
 
     public void EndDialogue()
     {
@@ -99,19 +101,6 @@ public class DialogueManager : MonoBehaviour
         playerController.abilityToMove = true;
         StopAllCoroutines();
         isDialogueOpen = false;
-        
-        if (Instance.currentDialogueEntity != null)
-        {
-            //var destroyWhenActivated = Instance.currentDialogueEntity.destroyWhenActivated;
-            //Instance.EndDialogue();
-            
-            if (currentDialogueEntity.destroyWhenActivated)
-            {
-                Destroy(gameObject);
-            }
-        }
-        
         animator.SetBool(AnimatorConstants.IsOpen, false);
-
     }
 }

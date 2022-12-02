@@ -16,4 +16,20 @@ public class DialogueAnimator : MonoBehaviour
         startAnimation.SetBool(AnimatorConstants.IsOpen, true);
         DialogueManager.Instance.StartDialogue(dialogueEntity);
     }
+    
+    /*
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (DialogueManager.Instance.currentDialogueEntity != null)
+        {
+            var destroyWhenActivated = DialogueManager.Instance.currentDialogueEntity.destroyWhenActivated;
+            DialogueManager.Instance.EndDialogue();
+            
+            if (destroyWhenActivated)
+            {
+                Destroy(DialogueManager.Instance.currentDialogueEntity);
+            }
+        }
+    }
+    */
 }
