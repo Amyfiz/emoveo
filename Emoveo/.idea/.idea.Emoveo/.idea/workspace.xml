@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/forest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +32,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,6 +58,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Emoveo.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\Projects\emoveo\Emoveo\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.1.18f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -99,6 +111,7 @@
       <workItem from="1669758868159" duration="2977000" />
       <workItem from="1669831274214" duration="398000" />
       <workItem from="1669975238758" duration="10967000" />
+      <workItem from="1670604887204" duration="419000" />
     </task>
     <servers />
   </component>
