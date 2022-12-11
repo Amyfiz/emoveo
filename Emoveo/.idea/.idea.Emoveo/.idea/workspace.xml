@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar/HealthBar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar/HealthBar.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/EnableSprintAndDash.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/EnableSprintAndDash.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/VectorValue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/VectorValue.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnableSprintAndDash.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnableSprintAndDash.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VectorValue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VectorValue.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +38,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +111,7 @@
       <workItem from="1669831274214" duration="398000" />
       <workItem from="1669975238758" duration="10967000" />
       <workItem from="1670604887204" duration="419000" />
-      <workItem from="1670767179925" duration="1500000" />
+      <workItem from="1670767179925" duration="2571000" />
     </task>
     <servers />
   </component>

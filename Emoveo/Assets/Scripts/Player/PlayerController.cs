@@ -32,14 +32,33 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidbody;
     private Animator animator;
     
+    //healthbar
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
 
     //get component Rigidbody when game started
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
+    //taking damage
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
+
+    //getting heal
+    public void GetHeal(int heal)
+    {
+        currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
+    }
 
     private void Sprint()
     {
@@ -81,7 +100,8 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
-
+    
+        //jump
         if (isGrounded && Input.GetKeyDown(KeyCode.Space) && abilityToMove)
         {
             rigidbody.velocity = Vector2.up * jumpForce;
@@ -96,6 +116,18 @@ public class PlayerController : MonoBehaviour
         if (!abilityToMove && moveInput == 0)
         {
             animator.SetBool("IsMoving", false);
+        }
+        
+        //damage
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            TakeDamage(20);
+        }
+        
+        //heal
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            GetHeal(10);
         }
 
         Sprint();
