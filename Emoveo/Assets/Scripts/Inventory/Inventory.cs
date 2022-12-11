@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         inventoryOn = false;
+        inventory.SetActive(false);
     }
 
     public void ShowInventory()
