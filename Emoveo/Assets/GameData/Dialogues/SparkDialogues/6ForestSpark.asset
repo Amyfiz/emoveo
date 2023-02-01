@@ -16,6 +16,7 @@ MonoBehaviour:
   destroyWhenActivated: 1
   isAbleToWalk: 0
   timeout: 0.1
+  dialogueNumber: 6
   sentences:
   - ". . . \u043F \u043E \u043A \u0430   \u0447 \u0442 \u043E\n\n                                                      
     :)"
