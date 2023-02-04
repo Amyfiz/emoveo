@@ -16,5 +16,6 @@ MonoBehaviour:
   destroyWhenActivated: 1
   isAbleToWalk: 1
   timeout: 0.07
+  dialogueNumber: 5
   sentences:
   - "\u0418\u043B\u0438 \u0432\u0438\u0434\u0435\u0442\u044C..."

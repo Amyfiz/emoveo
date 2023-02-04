@@ -7,6 +7,7 @@ public class DialogueEntity: ScriptableObject
     public bool destroyWhenActivated;
     public bool isAbleToWalk;
     public float timeout;
+    public int dialogueNumber;
 
     //minimum 3 lines, maximum - 10
     [TextArea(3, 10)]

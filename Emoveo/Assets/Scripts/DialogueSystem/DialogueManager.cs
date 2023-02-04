@@ -8,6 +8,7 @@ using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class DialogueManager : MonoBehaviour
@@ -84,11 +85,13 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(currentDialogueEntity.timeout);
         }
     }
-    
-    
 
     public void EndDialogue()
     {
+        if (currentDialogueEntity.dialogueNumber == 10)
+        {
+            SceneManager.LoadScene(1);
+        }
         currentDialogueEntity = null;
         animator.SetBool(AnimatorConstants.IsOpen, false);
         playerController.abilityToMove = true;
