@@ -17,13 +17,7 @@ public class Inventory : MonoBehaviour
     {
         if (inventoryOn == false)
         {
-            inventoryOn = true;
-            inventory.SetActive(true);
-        }
-        else if (inventoryOn == true)
-        {
-            inventoryOn = false;
-            inventory.SetActive(false);
+            inventory.SetActive(!inventory.activeSelf);
         }
     }
     
