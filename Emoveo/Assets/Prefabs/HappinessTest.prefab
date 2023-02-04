@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3771989962860575697}
   - component: {fileID: 405465977410458372}
   m_Layer: 5
-  m_Name: HappinesTest
+  m_Name: HappinessTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,3 +90,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 2277489443245393184, guid: 03254a436cbc85343bd02073865869a4, type: 3}
+  playerController: {fileID: 5662412888591699471, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
