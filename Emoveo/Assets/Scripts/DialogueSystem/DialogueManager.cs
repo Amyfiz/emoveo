@@ -90,7 +90,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentDialogueEntity.dialogueNumber == 10)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         currentDialogueEntity = null;
         animator.SetBool(AnimatorConstants.IsOpen, false);
