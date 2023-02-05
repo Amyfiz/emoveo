@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/10ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/10ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/1ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/1ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/2ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/3ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/4ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/5ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/6ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/6ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/7ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/7ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/8ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/8ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/9ForestSpark.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/SparkDialogues/9ForestSpark.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ForestTutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ForestTutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +19,6 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneLoader/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,16 +32,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Emoveo.exe" />
