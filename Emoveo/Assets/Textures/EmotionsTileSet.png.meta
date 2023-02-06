@@ -1,0 +1,894 @@
+fileFormatVersion: 2
+guid: 82a74c51ab59ac541a149197c86d0767
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EmotionsTileSet_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1582
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb317043cc718448bd29d5a9dc1869e
+      internalID: -2111003508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_1
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1582
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3253611bc74036f4bba1c87c6b3fb0ed
+      internalID: 375796802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_2
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1582
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9d3e1775770cd4cad785f5bbb56187
+      internalID: -1016194338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_3
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1582
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa17fbe6533e574686e03465e6ec66c
+      internalID: 840665865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_4
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 1582
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8d5528e35d47d409e7adab4d6c3ec1
+      internalID: 269193398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_5
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 1582
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd08aa080eaec3f48b7d131d2f4c488a
+      internalID: 166567613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_6
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 1582
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b317714aa3b2f624b8fa2d4084e08c15
+      internalID: -455732918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_7
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 1582
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422b54e6bf46c0a49997339ff257302c
+      internalID: 1211054109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_8
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 1582
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26237f506d819f846a0009c8eb63b328
+      internalID: -420203156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_9
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 1582
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2099aac6b25fd6547b75976e6a9e1186
+      internalID: 1324114020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1069
+        width: 433
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f682a173a0f52a54baa7d665f5dbd34c
+      internalID: 1200986489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_11
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1069
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f22393088754f4a8dca60b8199c980
+      internalID: 1097449483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_12
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1069
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146566cf56a74334f80fd2148581bbfa
+      internalID: -554312061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_13
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1069
+        width: 431
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001e6b62105d224489a34e9daf90a98d
+      internalID: 532164203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_14
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 1069
+        width: 431
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad2ec859902f904a8857bf1794461b5
+      internalID: 401798758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_15
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 1069
+        width: 433
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eafa78b5925b244ea47e24ab6baac70
+      internalID: 1631432248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_16
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 1069
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef59a3367b031134ca34d7fe1bb6a7b8
+      internalID: 1363844172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_17
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 1069
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d11b0964553dd42ac1ba8d3ac56679
+      internalID: 1075870017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_18
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 1069
+        width: 431
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69bdf40a28039d408bd7b0430797313
+      internalID: -1133211496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_19
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 1069
+        width: 431
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a02463fa935b6043b413794b8758746
+      internalID: 208793619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_20
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 559
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c658c0bf15365d14189401c8dac9020d
+      internalID: -1251642363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_21
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 559
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b5893378ff8c049bf3b10685b326d9
+      internalID: 2002968348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_22
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 559
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8156dbb7d7af6b8478a59590acb1c437
+      internalID: -885816572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_23
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 559
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea0215aa2fb1274085d09d26ffcf7c6
+      internalID: 321558340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_24
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 559
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc36c13c4f04a3345a41b1702d32ccf7
+      internalID: 406734596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_25
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 559
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0943b0e528805c346a4944169e7873ff
+      internalID: 1452004725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_26
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 559
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a768d4c5a03ac04a806bcfdb2d43a10
+      internalID: -750594611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_27
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 559
+        width: 432
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb6a7f7d38493a4ba6c189645e9c0fc
+      internalID: 455035994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_28
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 559
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8d57580b96df34b8d92b9057b926c9
+      internalID: 611549435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_29
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 559
+        width: 431
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7488b277d1072fe43b44a81168ade438
+      internalID: 582600159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_30
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 46
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4f71317a651ab40a37691a8d61a67c
+      internalID: -1893597940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_31
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 46
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca14d870346888c4d867d8df5025992e
+      internalID: -3531293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_32
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 46
+        width: 432
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57288ecbfdbaed14bb5ca470530a412a
+      internalID: 896212284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_33
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 46
+        width: 431
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421f5fd47f9fc7745a1574739e6f2ac4
+      internalID: -504962413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmotionsTileSet_34
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 46
+        width: 431
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632667a37a8918644b20b0a5a5c7c411
+      internalID: 315645031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EmotionsTileSet_13: 532164203
+      EmotionsTileSet_12: -554312061
+      EmotionsTileSet_10: 1200986489
+      EmotionsTileSet_7: 1211054109
+      EmotionsTileSet_14: 401798758
+      EmotionsTileSet_3: 840665865
+      EmotionsTileSet_28: 611549435
+      EmotionsTileSet_11: 1097449483
+      EmotionsTileSet_30: -1893597940
+      EmotionsTileSet_1: 375796802
+      EmotionsTileSet_16: 1363844172
+      EmotionsTileSet_19: 208793619
+      EmotionsTileSet_25: 1452004725
+      EmotionsTileSet_23: 321558340
+      EmotionsTileSet_32: 896212284
+      EmotionsTileSet_15: 1631432248
+      EmotionsTileSet_24: 406734596
+      EmotionsTileSet_18: -1133211496
+      EmotionsTileSet_0: -2111003508
+      EmotionsTileSet_6: -455732918
+      EmotionsTileSet_21: 2002968348
+      EmotionsTileSet_9: 1324114020
+      EmotionsTileSet_17: 1075870017
+      EmotionsTileSet_26: -750594611
+      EmotionsTileSet_34: 315645031
+      EmotionsTileSet_33: -504962413
+      EmotionsTileSet_8: -420203156
+      EmotionsTileSet_5: 166567613
+      EmotionsTileSet_20: -1251642363
+      EmotionsTileSet_22: -885816572
+      EmotionsTileSet_27: 455035994
+      EmotionsTileSet_31: -3531293
+      EmotionsTileSet_4: 269193398
+      EmotionsTileSet_29: 582600159
+      EmotionsTileSet_2: -1016194338
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

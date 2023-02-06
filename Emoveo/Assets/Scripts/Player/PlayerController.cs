@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Player player;
+    private Player player;
     private Rigidbody2D rigidbody;
     private Animator animator;
     
