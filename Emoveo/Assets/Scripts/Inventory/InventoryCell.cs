@@ -36,7 +36,5 @@ public class InventoryCell : MonoBehaviour
             Use();
         }
     }
-
-    
 }
 
