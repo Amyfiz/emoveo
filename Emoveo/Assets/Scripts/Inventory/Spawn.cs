@@ -19,13 +19,13 @@ public class Spawn : MonoBehaviour
 
     public void UseItem()
     {
-        if (item.name == "happiness")
+        if (item.name == "Happiness")
         {
             Vector2 playerPos = new Vector2(player.position.x + 5, player.position.y - 2);
             Instantiate(item, playerPos, Quaternion.identity);
         }
 
-        if (item.name == "courage")
+        if (item.name == "Courage")
         {
             player.position = new Vector3(player.position.x + 5, player.position.y, player.position.z);
         }
