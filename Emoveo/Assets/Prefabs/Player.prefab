@@ -62,8 +62,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5662412888591699475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.43, y: -3.522, z: -0.56738}
-  m_LocalScale: {x: 0.71716, y: 0.71716, z: 0.71716}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5662412886993236161}
@@ -133,13 +133,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFull: 000000000000
   slots:
-  - {fileID: 7739186994338930103, guid: baf4c50ed96615c40b00cd820b31ee8c, type: 3}
-  - {fileID: 3733706545851973952, guid: 8a2f6628caca2e3489860f3ae408ca4c, type: 3}
-  - {fileID: 6932220485414147426, guid: aab1ad00689a76045ae6ccdbe66edb6d, type: 3}
-  - {fileID: 3847906427487291670, guid: 9a2352d49e58c8f48995ac9566a46ee4, type: 3}
-  - {fileID: 3032444614379497951, guid: 4632b00ae2e6c9941bf3a9eb632bbf2b, type: 3}
-  - {fileID: 7426415496689729187, guid: 3cb12714cb7581e4b9b7d985dfda4f4c, type: 3}
-  inventory: {fileID: 2212751092420813130, guid: bc16d905fb68ad741942f1717c1e81bd, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!95 &5662412888591699466
 Animator:
   serializedVersion: 4

@@ -789,7 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 2111811116383404526}
   dialogueText: {fileID: 2111811118351050103}
-  playerController: {fileID: 5662412888591699471, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+  playerController: {fileID: 0}
   animator: {fileID: 2111811116774847225}
   currentDialogueEntity: {fileID: 0}
 --- !u!1001 &287082900867403422
