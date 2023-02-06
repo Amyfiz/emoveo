@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
         if (!currentDialogueEntity.isAbleToWalk)
         {
-            playerController.abilityToMove = false;
+            playerController.GetComponent<Player>().abilityToMove = false;
         }
 
         SentenceQueue.Clear();
@@ -94,7 +94,7 @@ public class DialogueManager : MonoBehaviour
         }
         currentDialogueEntity = null;
         animator.SetBool(AnimatorConstants.IsOpen, false);
-        playerController.abilityToMove = true;
+        playerController.GetComponent<Player>().abilityToMove = true;
         StopAllCoroutines();
         animator.SetBool(AnimatorConstants.IsOpen, false);
     }
