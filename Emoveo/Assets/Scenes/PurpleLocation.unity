@@ -410,9 +410,9 @@ Transform:
   - {fileID: 1561229428}
   - {fileID: 296663580}
   - {fileID: 1133081062}
+  - {fileID: 677104664}
   - {fileID: 1721818116}
   - {fileID: 1408044236}
-  - {fileID: 677104664}
   m_Father: {fileID: 1694879561}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 677104664}
   - component: {fileID: 677104663}
   m_Layer: 0
-  m_Name: mountains10
+  m_Name: mountains7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
