@@ -6,7 +6,7 @@ public class EnableSprintAndDash : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        playerController.abilityToDash = true;
-        playerController.abilityToSprint = true;
+        playerController.GetComponent<Player>().abilityToDash = true;
+        playerController.GetComponent<Player>().abilityToSprint = true;
     }
 }

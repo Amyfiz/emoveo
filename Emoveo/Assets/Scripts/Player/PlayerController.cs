@@ -2,132 +2,75 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool abilityToMove;
-    public bool abilityToSprint;
-    public bool abilityToDash;
-
-    //variables for moving player left and right
-    [SerializeField] private float playerSpeed;
-    [SerializeField] private float sprintForce;
-    [SerializeField] private float dashForce;
-
-    public float startDashTimer;
-    public float currentDashTimer;
-    
-    [SerializeField] private float moveInput;
-
-    [SerializeField] private bool isSprinting;
-    [SerializeField] private bool isDashing;
-
-    //variable for flipping player texture
-    [SerializeField] private bool facingRight = true;
-    
-    //variables for jump
-    [SerializeField] private float jumpForce;
-    [SerializeField] private bool isGrounded = true;
-    [SerializeField] private Transform feetPosition;
-    [SerializeField] private float checkRadius;
-    [SerializeField] private LayerMask whatIsGrounded;
-
+    private Player player;
     private Rigidbody2D rigidbody;
     private Animator animator;
     
-    //healthbar
-    public int maxHealth = 100;
-    public int currentHealth;
-    public HealthBar healthBar;
 
     //get component Rigidbody when game started
     private void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    //taking damage
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-    }
-
-    //getting heal
-    public void GetHeal(int heal)
-    {
-        currentHealth += heal;
-        healthBar.SetHealth(currentHealth);
     }
 
     private void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && moveInput != 0 && !isDashing && abilityToMove && abilityToSprint)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && player.moveInput != 0 && !player.isDashing && player.abilityToMove && player.abilityToSprint)
         {
-            playerSpeed += sprintForce;
-            isSprinting = true;
+            player.playerSpeed += player.sprintForce;
+            player.isSprinting = true;
         }
         
-        if (Input.GetKeyUp(KeyCode.LeftControl) && isSprinting && abilityToMove && abilityToSprint)
+        if (Input.GetKeyUp(KeyCode.LeftControl) && player.isSprinting && player.abilityToMove && player.abilityToSprint)
         {
-            playerSpeed -= sprintForce;
-            isSprinting = false;
+            player.playerSpeed -= player.sprintForce;
+            player.isSprinting = false;
         }
     }
     
     private void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && moveInput != 0 && !isDashing && !isSprinting && abilityToMove && abilityToDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && player.moveInput != 0 && !player.isDashing && !player.isSprinting && player.abilityToMove && player.abilityToDash)
         {
-            isDashing = true;
-            currentDashTimer = startDashTimer;
+            player.isDashing = true;
+            player.currentDashTimer = player.startDashTimer;
             
-            playerSpeed += dashForce;
+            player.playerSpeed += player.dashForce;
         }
         
-        if (isDashing && abilityToMove && abilityToDash)
+        if (player.isDashing && player.abilityToMove && player.abilityToDash)
         {
-            currentDashTimer -= Time.deltaTime;
+            player.currentDashTimer -= Time.deltaTime;
 
-            if (currentDashTimer <= 0)
+            if (player.currentDashTimer <= 0)
             {
-                isDashing = false;
-                playerSpeed -= dashForce;
+                player.isDashing = false;
+                player.playerSpeed -= player.dashForce;
             }
         }
     }
 
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(feetPosition.position, checkRadius, whatIsGrounded);
+        player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
     
         //jump
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space) && abilityToMove)
+        if (player.isGrounded && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
         {
-            rigidbody.velocity = Vector2.up * jumpForce;
+            rigidbody.velocity = Vector2.up * player.jumpForce;
         }
 
-        if (abilityToMove)
+        if (player.abilityToMove)
         {
-            rigidbody.velocity = new Vector2(moveInput * playerSpeed, rigidbody.velocity.y);
-            animator.SetBool("IsMoving", moveInput * playerSpeed != 0);
+            rigidbody.velocity = new Vector2(player.moveInput * player.playerSpeed, rigidbody.velocity.y);
+            animator.SetBool("IsMoving", player.moveInput * player.playerSpeed != 0);
         }
 
-        if (!abilityToMove && moveInput == 0)
+        if (!player.abilityToMove && player.moveInput == 0)
         {
             animator.SetBool("IsMoving", false);
-        }
-        
-        //damage
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            TakeDamage(20);
-        }
-        
-        //heal
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            GetHeal(10);
         }
 
         Sprint();
@@ -137,9 +80,9 @@ public class PlayerController : MonoBehaviour
     //flipping player texture
     private void PlayerFlip()
     {
-        if (abilityToMove)
+        if (player.abilityToMove)
         {
-            facingRight = !facingRight;
+            player.facingRight = !player.facingRight;
             Vector3 scaler = transform.localScale;
             scaler.x *= -1;
             transform.localScale = scaler;
@@ -148,22 +91,22 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        moveInput = Input.GetAxis("Horizontal");
+        player.moveInput = Input.GetAxis("Horizontal");
 
         //keeping player on the same Y while dashing
-        if (isDashing)
+        if (player.isDashing)
         {
-            rigidbody.velocity = new Vector2(moveInput * playerSpeed, 0);
+            rigidbody.velocity = new Vector2(player.moveInput * player.playerSpeed, 0);
         }
 
         
 
         //flipping player according to side they're facing
-       if (!facingRight && moveInput > 0 && abilityToMove)
+       if (!player.facingRight && player.moveInput > 0 && player.abilityToMove)
         {
             PlayerFlip();
         }
-        else if (facingRight && moveInput < 0 && abilityToMove)
+        else if (player.facingRight && player.moveInput < 0 && player.abilityToMove)
         {
             PlayerFlip();
         }

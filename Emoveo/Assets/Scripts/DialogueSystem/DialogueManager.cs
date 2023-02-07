@@ -8,6 +8,7 @@ using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class DialogueManager : MonoBehaviour
@@ -48,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
         if (!currentDialogueEntity.isAbleToWalk)
         {
-            playerController.abilityToMove = false;
+            playerController.GetComponent<Player>().abilityToMove = false;
         }
 
         SentenceQueue.Clear();
@@ -84,14 +85,16 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(currentDialogueEntity.timeout);
         }
     }
-    
-    
 
     public void EndDialogue()
     {
+        if (currentDialogueEntity.dialogueNumber == 10)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
         currentDialogueEntity = null;
         animator.SetBool(AnimatorConstants.IsOpen, false);
-        playerController.abilityToMove = true;
+        playerController.GetComponent<Player>().abilityToMove = true;
         StopAllCoroutines();
         animator.SetBool(AnimatorConstants.IsOpen, false);
     }
