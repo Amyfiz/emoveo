@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     private bool pauseMenuOn;
     public GameObject pauseMenu;
-    private Player player;
+    public Player player;
     
     private void Start()
     {
@@ -20,9 +18,6 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ShowPauseMenu();
-            player.abilityToDash = false;
-            player.abilityToMove = false;
-            player.abilityToSprint = false;
         }
     }
     
@@ -31,6 +26,11 @@ public class PauseMenu : MonoBehaviour
         if (!pauseMenuOn)
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
+            /*
+             player.abilityToDash = !player.abilityToDash;
+            player.abilityToMove = !player.abilityToMove;
+            player.abilityToSprint = !player.abilityToSprint;
+            */
         }
     }
 
