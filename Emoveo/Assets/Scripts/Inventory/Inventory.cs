@@ -13,9 +13,9 @@ public class Inventory : MonoBehaviour
         inventory.SetActive(false);
     }
 
-    public void ShowInventory()
+    private void ShowInventory()
     {
-        if (inventoryOn == false)
+        if (!inventoryOn)
         {
             inventory.SetActive(!inventory.activeSelf);
         }
@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ShowInventory();
         }
