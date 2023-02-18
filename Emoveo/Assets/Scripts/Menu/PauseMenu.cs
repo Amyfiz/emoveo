@@ -26,11 +26,15 @@ public class PauseMenu : MonoBehaviour
         if (!pauseMenuOn)
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
-            /*
-             player.abilityToDash = !player.abilityToDash;
-            player.abilityToMove = !player.abilityToMove;
-            player.abilityToSprint = !player.abilityToSprint;
-            */
+            
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+            }
         }
     }
 
