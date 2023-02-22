@@ -83,10 +83,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        if (currentDialogueEntity.dialogueNumber == 10)
+        /*if (currentDialogueEntity.dialogueNumber == 10)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        }*/
         currentDialogueEntity = null;
         animator.SetBool(AnimatorConstants.IsOpen, false);
         playerController.GetComponent<Player>().abilityToMove = true;
