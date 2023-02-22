@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    private bool pauseMenuOn;
+    public bool pauseMenuOn;
     public GameObject pauseMenu;
-    
+
     private void Start()
     {
         pauseMenuOn = false;
@@ -34,8 +34,12 @@ public class PauseMenu : MonoBehaviour
             {
                 Time.timeScale = 1;
             }
-            
         }
+    }
+
+    public void Continue()
+    {
+        ShowPauseMenu();
     }
 
     public void QuitToMainMenu()
