@@ -5,7 +5,6 @@ public class PauseMenu : MonoBehaviour
 {
     private bool pauseMenuOn;
     public GameObject pauseMenu;
-    public Player player;
     
     private void Start()
     {
@@ -35,6 +34,7 @@ public class PauseMenu : MonoBehaviour
             {
                 Time.timeScale = 1;
             }
+            
         }
     }
 
