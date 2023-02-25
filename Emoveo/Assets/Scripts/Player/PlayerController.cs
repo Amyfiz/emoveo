@@ -55,8 +55,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
-        Debug.Log(player.isGrounded);
-    
+
         //jump
         if (player.isGrounded && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
         {
