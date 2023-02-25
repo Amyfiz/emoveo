@@ -37,10 +37,19 @@ public class Spawn : MonoBehaviour
 
         if (item.name == "Courage")
         {
-            if (player.GetComponent<Player>().facingRight)
+            if (player.localScale == new Vector3(1f, 1f, 1f))
+                player.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+            else
+            {
+                player.position = new Vector3(player.position.x, player.position.y + 1.25f, player.position.z);
+                player.localScale = new Vector3(1f, 1f, 1f);
+            }
+
+
+            /*if (player.GetComponent<Player>().facingRight)
                 player.position = new Vector3(player.position.x + 5f, player.position.y, player.position.z);
             else
-                player.position = new Vector3(player.position.x - 5f, player.position.y, player.position.z);
+                player.position = new Vector3(player.position.x - 5f, player.position.y, player.position.z);*/
         }
     }
 }
