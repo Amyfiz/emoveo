@@ -15,7 +15,10 @@ public class Spawn : MonoBehaviour
 
     private void Update()
     {
-        
+        if (player.GetComponent<Player>().facingRight)
+            direction = 1f;
+        else
+            direction = -1f;
     }
 
     public void SpawnDroppedItem()
@@ -27,22 +30,19 @@ public class Spawn : MonoBehaviour
     {
         if (item.name == "Happiness")
         {
-            Vector2 playerPos = new Vector2();
-            if (player.GetComponent<Player>().facingRight)
-                playerPos = new Vector2((player.position.x + 5f), player.position.y - 2);
-            else
-                playerPos = new Vector2((player.position.x - 5f), player.position.y - 2);
-                Instantiate(item, playerPos, Quaternion.identity);
+            Vector2 playerPos = new Vector2((player.position.x + 5f * direction), player.position.y - 2);
+            Instantiate(item, playerPos, Quaternion.identity);
         }
 
         if (item.name == "Courage")
         {
-            if (player.localScale == new Vector3(1f, 1f, 1f))
-                player.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+            if (player.localScale == new Vector3(1f * direction, 1f, 1f))
+                player.localScale = new Vector3(0.2f * direction, 0.2f, 0.2f);
+            
             else
             {
-                player.position = new Vector3(player.position.x, player.position.y + 1.25f, player.position.z);
-                player.localScale = new Vector3(1f, 1f, 1f);
+                player.position = new Vector3(player.position.x, player.position.y + 1.2f, player.position.z); 
+                player.localScale = new Vector3(1f * direction, 1f, 1f);
             }
 
 
