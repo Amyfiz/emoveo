@@ -3,10 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    private bool pauseMenuOn;
+    public bool pauseMenuOn;
     public GameObject pauseMenu;
-    public Player player;
-    
+
     private void Start()
     {
         pauseMenuOn = false;
@@ -38,8 +37,14 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void QuitToMainMenu()
+    public void Continue()
     {
+        ShowPauseMenu();
+    }
+
+    public void QuitToMainMenu()
+    { 
+        Time.timeScale = 1;
         SceneManager.LoadScene("1_StartMenu");
     }
 }
