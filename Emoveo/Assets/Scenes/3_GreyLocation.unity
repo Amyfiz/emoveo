@@ -95970,6 +95970,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: ebe9bd87ffae5774dbe1ecabb781b4ff, type: 2}
   - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: 1946bfad2a6342a45ac8ea59a88ffa05, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 105
     m_Data: {fileID: 21300000, guid: a7bcda01aa4cf054a951eefccdb48c6c, type: 3}
@@ -95985,6 +95987,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: c9ec756f3ace72a46adfc7133b5e19a7, type: 3}
   - m_RefCount: 12
     m_Data: {fileID: 21300000, guid: 8442261a0559392498bba10743b6007c, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 9504
     m_Data:
@@ -105939,19 +105943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8fde57ce052491880aa81510a356bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuOn: 0
   pauseMenu: {fileID: 1191550244}
-  player: {fileID: 957023369}
---- !u!114 &957023369 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1044967702379977063, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
-  m_PrefabInstance: {fileID: 1127737826}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957023367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67eef29f4fbb61544a1aaa7c8caf5844, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1009528455
 GameObject:
   m_ObjectHideFlags: 0
