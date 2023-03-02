@@ -3,8 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class GodModeMenu : MonoBehaviour
 {
-    public static bool godModeOn;
+    public bool godModeOn;
     public GameObject godModeMenu;
+    
+    public Player player;
+
+    void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
     
     private void Start()
     {
@@ -40,5 +47,10 @@ public class GodModeMenu : MonoBehaviour
     public void Continue()
     {
         ShowGodModeMenu();
+    }
+    
+    public void Increase()
+    {
+        player.GetComponent<Player>().playerSpeed += 5f;
     }
 }

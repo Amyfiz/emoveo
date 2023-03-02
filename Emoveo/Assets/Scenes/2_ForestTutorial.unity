@@ -10442,6 +10442,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1300846575584728343, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+      propertyPath: godModeMenu
+      value: 
+      objectReference: {fileID: 856682292}
     - target: {fileID: 1646318178143398341, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -13460,6 +13464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a25a0bc86af9e4695ddd4a0e0fd9ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  godModeOn: 0
   godModeMenu: {fileID: 856682292}
 --- !u!1 &1666743641
 GameObject:
@@ -15505,7 +15510,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594413448291372824, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681069619907148491, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681069619907148491, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Increase
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681069619907148491, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: IncreaseMobility, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681069619907148491, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7017551933194989168, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
