@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class PlayerController : MonoBehaviour
 {
@@ -52,15 +53,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void Jump()
     {
-        player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
-
         //jump
         if (player.isGrounded && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
         {
             rigidbody.velocity = Vector2.up * player.jumpForce;
+            player.isJumping = true;
         }
+
+        if(Input.GetKeyUp(KeyCode.Space) && player.isJumping && player.abilityToMove)
+        {
+            player.isJumping = false;
+        }
+    }
+
+    private void Update()
+    {
+        player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
+
+
 
         if (player.abilityToMove)
         {
@@ -72,7 +84,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
-
+        Jump();
         Sprint();
         Dash();
     }

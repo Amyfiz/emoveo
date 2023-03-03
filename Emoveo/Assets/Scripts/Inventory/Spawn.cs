@@ -21,23 +21,6 @@ public class Spawn : MonoBehaviour
         else
             faceDirection = -1f;
     }
-
-    /*private void FixedUpdate()
-    {
-        Vector2 position = player.GetComponent<Player>().headPosition.position;
-        Vector2 rayDirection = Vector2.up;
-
-        int layerMask = LayerMask.GetMask("Ground");
-        
-        RaycastHit2D hit = Physics2D.Raycast(position, rayDirection, player.GetComponent<Player>().rayDistance, layerMask);
-    }
-
-    private void LateUpdate()
-    {
-        Debug.DrawRay(transform.position, Vector3.up * player.GetComponent<Player>().rayDistance, Color.red);
-    }*/
-
-
     public void SpawnDroppedItem()
     {
         UseItem();
@@ -46,10 +29,13 @@ public class Spawn : MonoBehaviour
 
     public void UseItem()
     {
+        bool jumped = false;
         if (item.name == "Happiness")
         {
-            Vector2 playerPos = new Vector2((player.position.x + 5f * faceDirection), player.position.y - 2);
-            Instantiate(item, playerPos, Quaternion.identity);
+            if(!player.GetComponent<Player>().isJumping)
+            {
+                player.GetComponent<Player>().jumpForce = 30f;
+            }
         }
 
         if (item.name == "Courage")

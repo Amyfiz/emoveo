@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] public bool isSprinting;
     [SerializeField] public bool isDashing;
+    [SerializeField] public bool isJumping;
 
     //variable for flipping player texture
     [SerializeField] public bool facingRight = true;
