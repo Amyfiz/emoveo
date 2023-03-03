@@ -51,6 +51,9 @@ public class GodModeMenu : MonoBehaviour
     
     public void Increase()
     {
-        player.GetComponent<Player>().playerSpeed += 5f;
+        player.GetComponent<Player>().playerSpeed = 20f;
+        player.GetComponent<Player>().abilityToDash = true;
+        player.GetComponent<Player>().abilityToSprint = true;
+        player.GetComponent<Player>().jumpForce = 8f;
     }
 }
