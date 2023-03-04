@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_ForestTutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_ForestTutorial.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/GodModeMenu/GodModeMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/GodModeMenu/GodModeMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +130,8 @@
       <workItem from="1677086167860" duration="3509000" />
       <workItem from="1677781248317" duration="2806000" />
       <workItem from="1677786119961" duration="3313000" />
-      <workItem from="1677830568951" duration="3816000" />
+      <workItem from="1677830568951" duration="4486000" />
+      <workItem from="1677942178174" duration="4335000" />
     </task>
     <servers />
   </component>

@@ -10446,6 +10446,10 @@ PrefabInstance:
       propertyPath: godModeMenu
       value: 
       objectReference: {fileID: 856682292}
+    - target: {fileID: 1044967702379977063, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+      propertyPath: whatIsGrounded.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1646318178143398341, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
       propertyPath: pauseMenu
       value: 
