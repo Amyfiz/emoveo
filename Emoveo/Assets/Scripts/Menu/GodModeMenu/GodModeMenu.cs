@@ -57,4 +57,11 @@ public class GodModeMenu : MonoBehaviour
         player.GetComponent<Player>().jumpForce = 6f;
         player.GetComponent<Player>().whatIsGrounded = LayerMask.NameToLayer("UI");
     }
+    
+    public void Decrease()
+    {
+        player.GetComponent<Player>().playerSpeed = 5f;
+        player.GetComponent<Player>().jumpForce = 4f;
+        player.GetComponent<Player>().whatIsGrounded = LayerMask.GetMask("Ground");
+    }
 }
