@@ -1,5 +1,9 @@
 using System;
+using System.Collections;
+using System.Linq;
+using System.Threading.Tasks;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour
@@ -7,7 +11,7 @@ public class Spawn : MonoBehaviour
     public GameObject item;
     private Transform player;
     private float faceDirection;
-    
+
 
     private void Start()
     {
@@ -21,21 +25,19 @@ public class Spawn : MonoBehaviour
         else
             faceDirection = -1f;
     }
+
     public void SpawnDroppedItem()
     {
         UseItem();
     }
-    
+
 
     public void UseItem()
     {
-        bool jumped = false;
         if (item.name == "Happiness")
         {
-            if(!player.GetComponent<Player>().isJumping)
-            {
-                player.GetComponent<Player>().jumpForce = 30f;
-            }
+            player.GetComponent<Player>().jumpForce = 30f;
+            Jumped();
         }
 
         if (item.name == "Courage")
@@ -47,7 +49,7 @@ public class Spawn : MonoBehaviour
             }
             else
             {
-                Vector2 playerPos = new Vector2((player.position.x + 5f * faceDirection), player.position.y - 2);
+                Vector2 playerPos = new Vector2((player.position.x + 5f * faceDirection), player.position.y);
                 Instantiate(item, playerPos, Quaternion.identity);
             }
 
@@ -67,11 +69,23 @@ public class Spawn : MonoBehaviour
             }
             else
             {
-                Vector2 playerPos = new Vector2((player.position.x + 5f * faceDirection), player.position.y - 2);
+                Vector2 playerPos = new Vector2((player.position.x + 5f * faceDirection), player.position.y);
                 Instantiate(item, playerPos, Quaternion.identity);
             }
-
         }
-
     }
+
+    private async Task Jumped()
+    {
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                break;
+            }
+            await Task.Yield();
+        }
+        player.GetComponent<Player>().jumpForce = 6f;
+    } 
+
 }
