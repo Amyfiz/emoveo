@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Sprint()
+    public void Sprint()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl) && player.moveInput != 0 && !player.isDashing && player.abilityToMove && player.abilityToSprint)
         {
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    private void Dash()
+    public void Dash()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && player.moveInput != 0 && !player.isDashing && !player.isSprinting && player.abilityToMove && player.abilityToDash)
         {
@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour
             
             player.playerSpeed += player.dashForce;
         }
-        
         if (player.isDashing && player.abilityToMove && player.abilityToDash)
         {
             player.currentDashTimer -= Time.deltaTime;
@@ -53,7 +52,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Jump()
+    public void Jump()
     {
         //jump
         if (player.isGrounded && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)

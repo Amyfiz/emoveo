@@ -52,11 +52,6 @@ public class Spawn : MonoBehaviour
                 Vector2 playerPos = new Vector2((player.position.x + 5f * faceDirection), player.position.y);
                 Instantiate(item, playerPos, Quaternion.identity);
             }
-
-            /*if (player.GetComponent<Player>().facingRight)
-                player.position = new Vector3(player.position.x + 5f, player.position.y, player.position.z);
-            else
-                player.position = new Vector3(player.position.x - 5f, player.position.y, player.position.z);*/
         }
 
         if (item.name == "Confidence")
@@ -73,6 +68,12 @@ public class Spawn : MonoBehaviour
                 Instantiate(item, playerPos, Quaternion.identity);
             }
         }
+
+        if (item.name == "Impetuosity")
+        {
+            player.GetComponent<Player>().abilityToDash = true;
+            /*Dashed();*/
+        }
     }
 
     private async Task Jumped()
@@ -86,6 +87,13 @@ public class Spawn : MonoBehaviour
             await Task.Yield();
         }
         player.GetComponent<Player>().jumpForce = 6f;
-    } 
+    }
 
+    /*private async Task Dashed()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !player.GetComponent<Player>().isGrounded)
+            await Task.Yield();
+        player.GetComponent<PlayerController>().Dash();
+        player.GetComponent<Player>().abilityToDash = false;
+    }*/
 }
