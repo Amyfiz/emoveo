@@ -5,8 +5,8 @@ public class GodModeMenu : MonoBehaviour
 {
     public bool godModeOn;
     public GameObject godModeMenu;
-    
     public Player player;
+    public GameObject dialogueTriggers;
 
     void Awake()
     {
@@ -15,6 +15,7 @@ public class GodModeMenu : MonoBehaviour
     
     private void Start()
     {
+        dialogueTriggers = GameObject.FindGameObjectWithTag("DialogueTriggers");
         godModeOn = false;
         godModeMenu.SetActive(false);
     }
@@ -63,5 +64,10 @@ public class GodModeMenu : MonoBehaviour
         player.GetComponent<Player>().playerSpeed = 5f;
         player.GetComponent<Player>().jumpForce = 4f;
         player.GetComponent<Player>().whatIsGrounded = LayerMask.GetMask("Ground");
+    }
+
+    public void Remove_Dialogues()
+    {
+        Destroy(dialogueTriggers);
     }
 }
