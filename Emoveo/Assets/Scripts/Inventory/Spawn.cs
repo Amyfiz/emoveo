@@ -58,6 +58,13 @@ public class Spawn : MonoBehaviour
         {
             player.GetComponent<Player>().abilityToDash = true;
         }
+
+        if (item.name == "Bravery")
+        {
+            player.GetComponent<Rigidbody2D>().gravityScale = -player.GetComponent<Rigidbody2D>().gravityScale;
+            player.localScale = new Vector3(player.localScale.x, -player.localScale.y, player.localScale.z);
+            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+        }
     }
 
     private async Task Jumped()
