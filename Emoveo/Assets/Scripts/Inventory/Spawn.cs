@@ -10,21 +10,20 @@ public class Spawn : MonoBehaviour
 {
     public GameObject item;
     private Transform player;
-    private float faceDirection;
-
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
-    private void Update()
+    private void CheckGravity()
     {
-        if (player.GetComponent<Player>().facingRight)
-            faceDirection = 1f;
-        else
-            faceDirection = -1f;
+        if (player.GetComponent<Rigidbody2D>().gravityScale > 0f && player.GetComponent<Player>().jumpForce < 0f)
+            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+        
+        if (player.GetComponent<Rigidbody2D>().gravityScale < 0f && player.GetComponent<Player>().jumpForce > 0f)
+            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
     }
+    
 
     public void SpawnDroppedItem()
     {
@@ -37,6 +36,7 @@ public class Spawn : MonoBehaviour
         if (item.name == "Happiness")
         {
             player.GetComponent<Player>().jumpForce = 30f;
+            CheckGravity();
             Jumped();
         }
 
@@ -44,7 +44,6 @@ public class Spawn : MonoBehaviour
         {
             player.position = new Vector3(player.position.x, player.position.y - player.localScale.y, player.position.z);
             player.localScale = new Vector3(player.localScale.x / 2f,player.localScale.y / 2f, player.localScale.z / 2f);
-            //player.GetComponent<Player>().jumpForce = 4f;
 
         }
 
@@ -63,7 +62,12 @@ public class Spawn : MonoBehaviour
         {
             player.GetComponent<Rigidbody2D>().gravityScale = -player.GetComponent<Rigidbody2D>().gravityScale;
             player.localScale = new Vector3(player.localScale.x, -player.localScale.y, player.localScale.z);
-            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce; 
+        }
+
+        if (item.name == "Perseverance")
+        {
+            player.GetComponent<Player>().abilityToBreakWalls = true;
         }
     }
 
@@ -71,12 +75,13 @@ public class Spawn : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && player.GetComponent<Player>().isGrounded)
             {
+                player.GetComponent<Player>().jumpForce = 6f;
+                CheckGravity();
                 break;
             }
             await Task.Yield();
         }
-        player.GetComponent<Player>().jumpForce = 6f;
     }
 }
