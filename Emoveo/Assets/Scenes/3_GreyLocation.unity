@@ -105939,19 +105939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8fde57ce052491880aa81510a356bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuOn: 0
   pauseMenu: {fileID: 1191550244}
-  player: {fileID: 957023369}
---- !u!114 &957023369 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1044967702379977063, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
-  m_PrefabInstance: {fileID: 1127737826}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957023367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67eef29f4fbb61544a1aaa7c8caf5844, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1009528455
 GameObject:
   m_ObjectHideFlags: 0
