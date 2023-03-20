@@ -28,4 +28,6 @@ public class Player : MonoBehaviour
     [SerializeField] public Transform feetPosition;
     [SerializeField] public float checkRadius;
     [SerializeField] public LayerMask whatIsGrounded;
+    [SerializeField] public Transform headPosition;
+    //[SerializeField] public float rayDistance;
 }
