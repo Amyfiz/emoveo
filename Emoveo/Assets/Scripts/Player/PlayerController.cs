@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Sprint()
+    public void Sprint()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl) && player.moveInput != 0 && !player.isDashing && player.abilityToMove && player.abilityToSprint)
         {
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    private void Dash()
+    public void Dash()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && player.moveInput != 0 && !player.isDashing && !player.isSprinting && player.abilityToMove && player.abilityToDash)
         {
@@ -39,7 +40,6 @@ public class PlayerController : MonoBehaviour
             
             player.playerSpeed += player.dashForce;
         }
-        
         if (player.isDashing && player.abilityToMove && player.abilityToDash)
         {
             player.currentDashTimer -= Time.deltaTime;
@@ -52,15 +52,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void Jump()
     {
-        player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
-
         //jump
         if (player.isGrounded && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
         {
             rigidbody.velocity = Vector2.up * player.jumpForce;
+            player.isJumping = true;
         }
+
+        if(Input.GetKeyUp(KeyCode.Space) && player.isJumping && player.abilityToMove)
+        {
+            player.isJumping = false;
+        }
+    }
+
+    private void Update()
+    {
+        player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
+
+
 
         if (player.abilityToMove)
         {
@@ -72,7 +83,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
-
+        Jump();
         Sprint();
         Dash();
     }
