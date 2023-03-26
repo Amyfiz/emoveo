@@ -66,8 +66,14 @@ public class GodModeMenu : MonoBehaviour
         player.GetComponent<Player>().whatIsGrounded = LayerMask.GetMask("Ground");
     }
 
-    public void Remove_Dialogues()
+    public void RemoveDialogues()
     {
         Destroy(dialogueTriggers);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 }
