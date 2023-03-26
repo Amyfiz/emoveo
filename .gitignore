@@ -11,7 +11,7 @@ https://github.com/github/gitignore/blob/main/Unity.gitignore
 /Emoveo/[Bb]uilds/
 /Emoveo/[Ll]ogs/
 /Emoveo/[Uu]ser[Ss]ettings/
-/Emoveo/.idea/
+/Emoveo/.idea
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
