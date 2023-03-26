@@ -6,12 +6,10 @@ using UnityEngine;
 public class doorState : MonoBehaviour
 {
     public leverState _leverState;
-    private bool isOpened;
 
     public void Update()
     {
-        isOpened = _leverState.activated;
-
+        this.GetComponent<Collider2D>().isTrigger = _leverState.activated;
     }
 
 }
