@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         //jump
-        if (player.isGrounded && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
+        if ((player.isGrounded || player.isSticked) && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
         {
             rigidbody.velocity = Vector2.up * player.jumpForce;
             player.isJumping = true;
@@ -70,8 +70,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         player.isGrounded = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsGrounded);
-
-
+        player.isSticked = Physics2D.OverlapCircle(player.feetPosition.position, player.checkRadius, player.whatIsSticky);
 
         if (player.abilityToMove)
         {
