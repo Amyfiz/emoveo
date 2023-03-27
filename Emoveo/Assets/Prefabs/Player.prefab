@@ -236,6 +236,7 @@ MonoBehaviour:
   moveInput: 0
   isSprinting: 0
   isDashing: 0
+  isJumping: 0
   facingRight: 1
   jumpForce: 4
   isGrounded: 1
@@ -244,6 +245,9 @@ MonoBehaviour:
   whatIsGrounded:
     serializedVersion: 2
     m_Bits: 64
+  whatIsSticky:
+    serializedVersion: 2
+    m_Bits: 8
   headPosition: {fileID: 6111735408003665930}
 --- !u!1 &7895743721916237506
 GameObject:

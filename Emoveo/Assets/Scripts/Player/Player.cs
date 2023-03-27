@@ -27,9 +27,11 @@ public class Player : MonoBehaviour
     //variables for jump
     [SerializeField] public float jumpForce;
     [SerializeField] public bool isGrounded = true;
+    [SerializeField] public bool isSticked = false;
     [SerializeField] public Transform feetPosition;
     [SerializeField] public float checkRadius;
     [SerializeField] public LayerMask whatIsGrounded;
+    [SerializeField] public LayerMask whatIsSticky;
     [SerializeField] public Transform headPosition;
     //[SerializeField] public float rayDistance;
     
