@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 4148599122800328642}
   - component: {fileID: 4861886980305553464}
   - component: {fileID: 5787101994474845182}
-  - component: {fileID: 3360351729581309312}
+  - component: {fileID: 4562738132222940056}
   - component: {fileID: 5188028625120174083}
   - component: {fileID: -58110410905983484}
   m_Layer: 0
-  m_Name: Confidence
+  m_Name: Perseverance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 1801139269
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 208793619, guid: 82a74c51ab59ac541a149197c86d0767, type: 3}
+  m_Sprite: {fileID: -1016194338, guid: 82a74c51ab59ac541a149197c86d0767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,7 +104,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
---- !u!58 &3360351729581309312
+--- !u!58 &4562738132222940056
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,4 +153,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6fab37782bb9b4eb9513a256c9fce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotButton: {fileID: 3771989962860575727, guid: 24a5f299325004d48a705d57ac79c440, type: 3}
+  slotButton: {fileID: 3771989962860575727, guid: 9ed5ed8aa7533674cb7c6023b252c8a0, type: 3}
