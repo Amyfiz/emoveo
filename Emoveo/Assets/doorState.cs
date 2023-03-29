@@ -9,7 +9,10 @@ public class doorState : MonoBehaviour
 
     public void Update()
     {
-        this.GetComponent<Collider2D>().isTrigger = _leverState.activated;
+        if (_leverState.activated)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
