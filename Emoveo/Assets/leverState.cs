@@ -15,7 +15,12 @@ public class leverState : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 activated = !activated;
-                
+            }
+
+            if (lever.GetComponent<Collider2D>().isTrigger)
+            {
+                activated = !activated;
+                Destroy(lever);
             }
         }
     }
