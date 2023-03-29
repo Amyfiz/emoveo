@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class doorState : MonoBehaviour
+public class DoorState : MonoBehaviour
 {
-    public leverState _leverState;
+    public LeverState _leverState;
 
     public void Update()
     {
