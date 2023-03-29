@@ -10,13 +10,15 @@ public class leverState : MonoBehaviour
     public GameObject lever;
     protected internal bool activated = false;
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            activated = !activated;
-            Destroy(lever); 
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                activated = !activated;
+                
+            }
         }
     }
-    
 }
