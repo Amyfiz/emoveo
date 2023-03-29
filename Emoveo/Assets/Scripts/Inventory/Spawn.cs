@@ -35,7 +35,7 @@ public class Spawn : MonoBehaviour
     {
         if (item.name == "Happiness")
         {
-            player.GetComponent<Player>().jumpForce = 30f;
+            player.GetComponent<Player>().jumpForce = 40f;
             CheckGravity();
             Jumped();
         }
@@ -44,13 +44,14 @@ public class Spawn : MonoBehaviour
         {
             player.position = new Vector3(player.position.x, player.position.y - player.localScale.y, player.position.z);
             player.localScale = new Vector3(player.localScale.x / 2f,player.localScale.y / 2f, player.localScale.z / 2f);
-
+            player.GetComponent<Player>().jumpForce = player.GetComponent<Player>().jumpForce / 2f;
         }
 
         if (item.name == "Confidence")
         {
             player.position = new Vector3(player.position.x, player.position.y + player.localScale.y, player.position.z);
             player.localScale = new Vector3(player.localScale.x * 2f,player.localScale.y * 2f, player.localScale.z * 2f);
+            player.GetComponent<Player>().jumpForce = player.GetComponent<Player>().jumpForce * 2f;
         }
 
         if (item.name == "Impetuosity")
@@ -77,7 +78,7 @@ public class Spawn : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && player.GetComponent<Player>().isGrounded)
             {
-                player.GetComponent<Player>().jumpForce = 6f;
+                player.GetComponent<Player>().jumpForce = 16f;
                 CheckGravity();
                 break;
             }
