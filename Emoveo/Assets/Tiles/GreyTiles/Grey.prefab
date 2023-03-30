@@ -2427,6 +2427,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 2, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 22
+      m_TileSpriteIndex: 27
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -12, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -2533,7 +2543,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 26816ec0851e4b645a0ac99371113b72, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 8c59f1f66ae88cc47b716d86a3816113, type: 2}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 28213f7265f6a204ba41b7e4479364d4, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: d2d0fa98cadc49347a1c9444b24f1685, type: 2}
@@ -2880,7 +2890,7 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 3a87ecae31ef1a9479c1c8e7afec99f5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 8b02fb02e7e317e49bbb45f6ae91cf50, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: e4cbb9caa046b464884d789c8653eda5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: ef9295e9e26946a4cafa1e35154fb132, type: 3}
@@ -3163,7 +3173,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: ceb235c71b8f96446a5737171d341087, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 240
+  - m_RefCount: 241
     m_Data:
       e00: 1
       e01: 0
@@ -3182,7 +3192,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 240
+  - m_RefCount: 241
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
@@ -3259,7 +3269,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &6164186290247892950
+--- !u!114 &3392698916880886318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
