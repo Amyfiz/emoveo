@@ -19,14 +19,6 @@ public class GodModeMenu : MonoBehaviour
         godModeOn = false;
         godModeMenu.SetActive(false);
     }
-    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            ShowGodModeMenu();
-        }
-    }
 
     public void ShowGodModeMenu()
     {
