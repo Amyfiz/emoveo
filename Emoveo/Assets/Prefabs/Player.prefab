@@ -238,7 +238,7 @@ MonoBehaviour:
   isDashing: 0
   isJumping: 0
   facingRight: 1
-  jumpForce: 10
+  jumpForce: 13
   isGrounded: 1
   isSticked: 0
   feetPosition: {fileID: 5662412886993236161}
@@ -251,7 +251,9 @@ MonoBehaviour:
     m_Bits: 8
   headPosition: {fileID: 6111735408003665930}
   jumpTimeCounter: 0
-  jumpTime: 0.35
+  jumpTime: 0.3
+  normalGravity: 4
+  stickyGravity: 50
 --- !u!1 &7895743721916237506
 GameObject:
   m_ObjectHideFlags: 0
