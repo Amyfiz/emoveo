@@ -80,7 +80,7 @@ public class Spawn : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && player.GetComponent<Player>().isGrounded)
             {
-                player.GetComponent<Player>().jumpForce = 16f;
+                player.GetComponent<Player>().jumpForce = 13f;
                 CheckGravity();
                 break;
             }

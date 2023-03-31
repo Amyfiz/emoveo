@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             if (player.jumpTimeCounter > 0)
             {
-                rigidbody.velocity = Vector2.up * player.jumpForce;
+                rigidbody.velocity = new Vector2(player.moveInput * player.playerSpeed,player.jumpForce);
                 player.jumpTimeCounter -= Time.deltaTime;
             }
             else
@@ -78,10 +78,10 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //if(Input.GetKeyUp(KeyCode.Space) && player.isJumping && player.abilityToMove)
-        //{
-        //    player.isJumping = false;
-        //}
+        if(Input.GetKeyUp(KeyCode.Space) && player.abilityToMove)
+        {
+            player.isJumping = false;
+        }
     }
 
     private void Update()

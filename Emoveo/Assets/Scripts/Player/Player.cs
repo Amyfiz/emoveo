@@ -38,4 +38,9 @@ public class Player : MonoBehaviour
     [SerializeField] public float jumpTime;
     
     protected internal bool abilityToBreakWalls;
+    
+    //
+    [SerializeField] public float normalGravity;
+    [SerializeField] public float stickyGravity;
+
 }
