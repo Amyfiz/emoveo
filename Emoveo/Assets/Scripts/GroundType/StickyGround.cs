@@ -20,12 +20,12 @@ public class StickyGround : MonoBehaviour
         if (player.isSticked)
         {
             player.isGrounded = true;
-            player.GetComponent<Rigidbody2D>().gravityScale = 50f;
+            player.GetComponent<Rigidbody2D>().gravityScale = player.stickyGravity;
             
         }
         else
         {
-            player.GetComponent<Rigidbody2D>().gravityScale = 3f;
+            player.GetComponent<Rigidbody2D>().gravityScale = player.normalGravity;
         }
     }
 }
