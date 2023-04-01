@@ -17,7 +17,6 @@ public class LeverState : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 activated = !activated;
-                
             }
         }
     }
