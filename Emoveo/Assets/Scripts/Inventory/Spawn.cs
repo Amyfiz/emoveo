@@ -15,21 +15,6 @@ public class Spawn : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    private void CheckGravity()
-    {
-        if (player.GetComponent<Rigidbody2D>().gravityScale > 0f && player.GetComponent<Player>().jumpForce < 0f)
-            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
-        
-        if (player.GetComponent<Rigidbody2D>().gravityScale < 0f && player.GetComponent<Player>().jumpForce > 0f)
-            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
-    }
-    
-
-    public void SpawnDroppedItem()
-    {
-        UseItem();
-    }
-
 
     public void UseItem()
     {
@@ -86,5 +71,19 @@ public class Spawn : MonoBehaviour
             }
             await Task.Yield();
         }
+    }
+    
+    private void CheckGravity()
+    {
+        if (player.GetComponent<Rigidbody2D>().gravityScale > 0f && player.GetComponent<Player>().jumpForce < 0f)
+            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+        
+        if (player.GetComponent<Rigidbody2D>().gravityScale < 0f && player.GetComponent<Player>().jumpForce > 0f)
+            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+    }
+    
+    public void SpawnDroppedItem()
+    {
+        UseItem();
     }
 }
