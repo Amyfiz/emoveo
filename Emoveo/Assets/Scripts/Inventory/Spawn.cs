@@ -21,8 +21,8 @@ public class Spawn : MonoBehaviour
         if (item.name == "Happiness")
         {
             player.GetComponent<Player>().jumpForce = 35f;
-            CheckGravity();
-            Jumped();
+            //CheckGravity();
+            //Jumped();
         }
 
         if (item.name == "Courage")
@@ -59,28 +59,28 @@ public class Spawn : MonoBehaviour
         }
     }
 
-    private async Task Jumped()
-    {
-        while (true)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) && player.GetComponent<Player>().isGrounded)
-            {
-                player.GetComponent<Player>().jumpForce = 13f;
-                CheckGravity();
-                break;
-            }
-            await Task.Yield();
-        }
-    }
+    // private async Task Jumped()
+    // {
+    //     while (true)
+    //     {
+    //         if (Input.GetKeyDown(KeyCode.Space) && player.GetComponent<Player>().isGrounded)
+    //         {
+    //             player.GetComponent<Player>().jumpForce = 13f;
+    //             //CheckGravity();
+    //             break;
+    //         }
+    //         await Task.Yield();
+    //     }
+    // }
     
-    private void CheckGravity()
-    {
-        if (player.GetComponent<Rigidbody2D>().gravityScale > 0f && player.GetComponent<Player>().jumpForce < 0f)
-            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
-        
-        if (player.GetComponent<Rigidbody2D>().gravityScale < 0f && player.GetComponent<Player>().jumpForce > 0f)
-            player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
-    }
+    // private void CheckGravity()
+    // {
+    //     if (player.GetComponent<Rigidbody2D>().gravityScale > 0f && player.GetComponent<Player>().jumpForce < 0f)
+    //         player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+    //     
+    //     if (player.GetComponent<Rigidbody2D>().gravityScale < 0f && player.GetComponent<Player>().jumpForce > 0f)
+    //         player.GetComponent<Player>().jumpForce = -player.GetComponent<Player>().jumpForce;
+    // }
     
     public void SpawnDroppedItem()
     {
