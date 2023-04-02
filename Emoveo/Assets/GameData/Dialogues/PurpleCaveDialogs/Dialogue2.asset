@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b6db269b94e9c14ea35337a1b346c6b, type: 3}
-  m_Name: 2ForestSpark
+  m_Name: Dialogue2
   m_EditorClassIdentifier: 
   name: ???
   destroyWhenActivated: 1
   isAbleToWalk: 1
   timeout: 0.02
   sentences:
-  - "\u041D\u0435 \u0437\u043D\u0430\u044E, \u043A\u0430\u043A \u0441\u043A\u0430\u0437\u0430\u0442\u044C
-    \u0442\u0435\u0431\u0435 \u043E\u0431 \u044D\u0442\u043E\u043C, \u043D\u043E\u2026"
+  - "\u041E\u0439, \u0430 \u043F\u043E\u0447\u0435\u043C\u0443 \u043F\u043E\u0442\u043E\u043B\u043E\u043A
+    \u0442\u0440\u044F\u0441\u0451\u0442\u0441\u044F?"
+  - "\u041F\u043E\u0431\u0435\u0436\u0430\u043B\u0438 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C!"
