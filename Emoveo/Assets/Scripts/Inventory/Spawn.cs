@@ -1,9 +1,3 @@
-using System;
-using System.Collections;
-using System.Linq;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour
