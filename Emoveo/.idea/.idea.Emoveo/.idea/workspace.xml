@@ -5,10 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue11.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue11.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue9.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/Dialogue9.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YellowLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YellowLocation.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/JustInCaseYouMessUp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/JustInCaseYouMessUp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_ForestTutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_ForestTutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueEntity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +48,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryCell.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryCell.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,11 +63,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Emoveo.exe" />
