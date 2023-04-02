@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
   name: ???
-  destroyWhenActivated: 0
-  isAbleToWalk: 0
+  destroyWhenActivated: 1
+  isAbleToWalk: 1
   timeout: 0.02
-  triggerEvent: 0
-  dialogueNumber: 0
   sentences:
   - "\u041E\u0439, \u0430 \u043F\u043E\u0447\u0435\u043C\u0443 \u043F\u043E\u0442\u043E\u043B\u043E\u043A
     \u0442\u0440\u044F\u0441\u0451\u0442\u0441\u044F?"
