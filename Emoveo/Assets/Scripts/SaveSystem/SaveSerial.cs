@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -65,3 +66,4 @@ class SaveData
     public float savedFloat;
     public bool savedBool;
 }
+*/
