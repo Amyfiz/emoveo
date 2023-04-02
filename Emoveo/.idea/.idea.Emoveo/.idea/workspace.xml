@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/JustInCaseYouMessUp.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameData/Dialogues/GreyDialogues/JustInCaseYouMessUp.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystals.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystals.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/JustInCaseYOuMessUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/JustInCaseYOuMessUp.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/TriggerNormalJump.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/TriggerNormalJump.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/LeverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/LeverState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Spawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Spawn.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +21,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryCell.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -137,6 +124,7 @@
       <workItem from="1680206734068" duration="577000" />
       <workItem from="1680267564920" duration="4047000" />
       <workItem from="1680366419386" duration="4731000" />
+      <workItem from="1680434218750" duration="2340000" />
     </task>
     <servers />
   </component>
