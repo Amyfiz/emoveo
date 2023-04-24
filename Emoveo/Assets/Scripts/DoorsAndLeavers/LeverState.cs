@@ -16,7 +16,6 @@ public class LeverState : MonoBehaviour
     {
         if (collider.IsTouching(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>()))
         {
-            Debug.Log("ЕСТЬ КОНТАКТ");
             if (Input.GetKeyDown(KeyCode.F))
             {
                 activated = true;
