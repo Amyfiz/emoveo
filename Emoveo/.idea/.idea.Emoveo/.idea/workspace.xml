@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/DoorState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/DoorState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/LeverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/LeverState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GroundType/StickyGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GroundType/StickyGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Spawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Spawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/DestroyStone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/DestroyStone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSerial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSerial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader/LoadNextScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader/LoadNextScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystals.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/JustInCaseYOuMessUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/JustInCaseYOuMessUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/TriggerNormalJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/TriggerNormalJump.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +21,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@13.1.8/Editor/Data/Implementation/Edge.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Button/ButtonTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@13.1.8/Editor/Data/Implementation/Edge.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Button/TestButton.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -52,16 +39,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Emoveo.exe" />
@@ -80,7 +68,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.1.18f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="D:\Project\2022.1.18f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -141,6 +129,7 @@
       <workItem from="1680267564920" duration="4047000" />
       <workItem from="1680366419386" duration="4731000" />
       <workItem from="1680434218750" duration="2340000" />
+      <workItem from="1683315614143" duration="2089000" />
     </task>
     <servers />
   </component>
