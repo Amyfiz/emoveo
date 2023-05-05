@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_GreyLocation.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/DoorState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/DoorState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/LeverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorsAndLeavers/LeverState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GroundType/StickyGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GroundType/StickyGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Spawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Spawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/DestroyStone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Abilities/DestroyStone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/PlayerDash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/PlayerDash.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/PlayerSprint.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/PlayerSprint.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/PlayerStatic.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRunAnimation/PlayerStatic.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSerial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/SaveSerial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader/LoadNextScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader/LoadNextScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystals.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/DeathCrystalsDesert2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/JustInCaseYOuMessUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/JustInCaseYOuMessUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/TriggerNormalJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/TriggerNormalJump.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +27,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Button/TestButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Button/ButtonTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@13.1.8/Editor/Data/Implementation/Edge.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryCell.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Button/TestButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -141,6 +134,7 @@
       <workItem from="1680267564920" duration="4047000" />
       <workItem from="1680366419386" duration="4731000" />
       <workItem from="1680434218750" duration="2340000" />
+      <workItem from="1683314661815" duration="1729000" />
     </task>
     <servers />
   </component>
