@@ -1178,9 +1178,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.13059612}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.1641612
+  m_Radius: 1
 --- !u!212 &337261164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1254,6 +1254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 337261161}
+  collider: {fileID: 0}
 --- !u!114 &337261167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,6 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 337261161}
+  collider: {fileID: 0}
 --- !u!1 &340460021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 368524570}
+  collider: {fileID: 0}
 --- !u!58 &368524573
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1507,9 +1510,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.13059612}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.1641612
+  m_Radius: 0.9
 --- !u!212 &368524574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1583,6 +1586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 368524570}
+  collider: {fileID: 0}
 --- !u!1 &370804499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,6 +3195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 654771492}
+  collider: {fileID: 0}
 --- !u!58 &654771495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3204,9 +3209,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.13059612}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.1641612
+  m_Radius: 0.9
 --- !u!212 &654771496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3280,6 +3285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 654771492}
+  collider: {fileID: 0}
 --- !u!1 &664647923
 GameObject:
   m_ObjectHideFlags: 0
@@ -74509,6 +74515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 827911005}
+  collider: {fileID: 0}
 --- !u!58 &827911008
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -74522,9 +74529,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.13059612}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.1641612
+  m_Radius: 0.9
 --- !u!212 &827911009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74598,6 +74605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 827911005}
+  collider: {fileID: 0}
 --- !u!1 &830697605
 GameObject:
   m_ObjectHideFlags: 0
@@ -76313,6 +76321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1147460835}
+  collider: {fileID: 0}
 --- !u!222 &1147460840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -76386,9 +76395,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0111732}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.8319988
+  m_Radius: 0.9
 --- !u!1 &1161844317
 GameObject:
   m_ObjectHideFlags: 0
@@ -78399,6 +78408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1640173378}
+  collider: {fileID: 0}
 --- !u!58 &1640173381
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -78412,9 +78422,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.13059612}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.1641612
+  m_Radius: 0.9
 --- !u!212 &1640173382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78488,6 +78498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1640173378}
+  collider: {fileID: 0}
 --- !u!1 &1665879980
 GameObject:
   m_ObjectHideFlags: 0
@@ -79253,6 +79264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1829456203}
+  collider: {fileID: 0}
 --- !u!58 &1829456206
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -79266,9 +79278,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.13059612}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.1641612
+  m_Radius: 0.9
 --- !u!212 &1829456207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79342,6 +79354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1829456203}
+  collider: {fileID: 0}
 --- !u!1 &1908180789
 GameObject:
   m_ObjectHideFlags: 0
