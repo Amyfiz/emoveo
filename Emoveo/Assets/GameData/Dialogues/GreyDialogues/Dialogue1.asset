@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: ???
   destroyWhenActivated: 1
-  isAbleToWalk: 0
+  isAbleToWalk: 1
   timeout: 0.02
   sentences:
   - "\u0424\u0443\u0445"

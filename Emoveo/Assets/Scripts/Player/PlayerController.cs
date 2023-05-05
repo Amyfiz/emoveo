@@ -91,6 +91,25 @@ public class PlayerController : MonoBehaviour
         if (player.abilityToMove)
         {
             rigidbody.velocity = new Vector2(player.moveInput * player.playerSpeed, rigidbody.velocity.y);
+            
+            if (player.isDashing)
+            {
+                animator.SetBool("IsDashing", true);
+            }
+            else
+            {
+                animator.SetBool("IsDashing", false);
+            }
+            
+            if (player.isSprinting)
+            {
+                animator.SetBool("IsSprinting", true);
+            }
+            else
+            {
+                animator.SetBool("IsSprinting", false);
+            }
+            
             animator.SetBool("IsMoving", player.moveInput * player.playerSpeed != 0);
         }
 
@@ -98,6 +117,16 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+
+        if (player.isDashing)
+        {
+            animator.SetBool("IsDashing", true);
+        }
+        else
+        {
+            animator.SetBool("IsDashing", false);
+        }
+
         Jump();
         Sprint();
         Dash();
