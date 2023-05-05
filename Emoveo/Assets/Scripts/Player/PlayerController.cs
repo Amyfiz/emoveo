@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,13 +54,30 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         //jump
-        if ((player.isGrounded || player.isSticked) && Input.GetKeyDown(KeyCode.Space) && player.abilityToMove)
+        if ((player.isGrounded || player.isSticked) && player.abilityToMove)
         {
-            rigidbody.velocity = Vector2.up * player.jumpForce;
-            player.isJumping = true;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                player.isJumping = true;
+                player.jumpTimeCounter = player.jumpTime;
+                rigidbody.velocity = Vector2.up * player.jumpForce;
+            }
         }
 
-        if(Input.GetKeyUp(KeyCode.Space) && player.isJumping && player.abilityToMove)
+        if (Input.GetKey(KeyCode.Space) && player.isJumping)
+        {
+            if (player.jumpTimeCounter > 0)
+            {
+                rigidbody.velocity = new Vector2(player.moveInput * player.playerSpeed,player.jumpForce);
+                player.jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                player.isJumping = false;
+            }
+        }
+
+        if(Input.GetKeyUp(KeyCode.Space) && player.abilityToMove)
         {
             player.isJumping = false;
         }

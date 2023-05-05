@@ -33,9 +33,14 @@ public class Player : MonoBehaviour
     [SerializeField] public LayerMask whatIsGrounded;
     [SerializeField] public LayerMask whatIsSticky;
     [SerializeField] public Transform headPosition;
-    //[SerializeField] public float rayDistance;
-    
-    
+
+    [SerializeField] public float jumpTimeCounter;
+    [SerializeField] public float jumpTime;
     
     protected internal bool abilityToBreakWalls;
+    
+    //
+    [SerializeField] public float normalGravity;
+    [SerializeField] public float stickyGravity;
+
 }
