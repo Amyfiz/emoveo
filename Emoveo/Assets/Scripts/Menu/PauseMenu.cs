@@ -41,8 +41,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Continue()
     {
-        ShowPauseMenu();
         menuButtonsSounds.Play();
+        ShowPauseMenu();
     }
 
     public void QuitToMainMenu()
