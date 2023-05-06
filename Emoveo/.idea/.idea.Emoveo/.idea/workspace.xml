@@ -5,33 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7378d8e1-f0d2-4b38-96ee-682c4f86c77a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/InventorySound.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/InventorySound.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/RunningSound.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/RunningSound.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Бег вправо и влево.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Бег вправо и влево.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Бег.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Бег.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Дверь.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Дверь.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Кнопки в меню.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Кнопки в меню.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Прыжок (камень).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Прыжок (камень).mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Прыжок.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Прыжок.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Рывок в воздухе.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundEffects/Рывок в воздухе.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Emoveo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Inventory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YellowLocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YellowLocation.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/GodModeMenu/GodModeMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/GodModeMenu/GodModeMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/Sounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/Sounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Emoveo.exe" />
@@ -156,7 +134,7 @@
       <workItem from="1680366419386" duration="4731000" />
       <workItem from="1680434218750" duration="2340000" />
       <workItem from="1683314661815" duration="1729000" />
-      <workItem from="1683380476236" duration="5725000" />
+      <workItem from="1683380476236" duration="8439000" />
     </task>
     <servers />
   </component>
