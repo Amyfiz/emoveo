@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
     private Player player;
     private Rigidbody2D rigidbody;
     private Animator animator;
-    
 
     //get component Rigidbody when game started
     private void Awake()

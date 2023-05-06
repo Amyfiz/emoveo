@@ -7,6 +7,7 @@ public class GodModeMenu : MonoBehaviour
     public GameObject godModeMenu;
     public Player player;
     public GameObject dialogueTriggers;
+    [SerializeField] private AudioSource menuButtonsSounds;
 
     void Awake()
     {
@@ -40,10 +41,12 @@ public class GodModeMenu : MonoBehaviour
     public void Continue()
     {
         ShowGodModeMenu();
+        menuButtonsSounds.Play();
     }
     
     public void Increase()
     {
+        menuButtonsSounds.Play();
         player.GetComponent<Player>().playerSpeed = 20f;
         player.GetComponent<Player>().abilityToDash = true;
         player.GetComponent<Player>().abilityToSprint = true;
@@ -53,6 +56,7 @@ public class GodModeMenu : MonoBehaviour
     
     public void Decrease()
     {
+        menuButtonsSounds.Play();
         player.GetComponent<Player>().playerSpeed = 5f;
         //player.GetComponent<Player>().jumpForce = 4f;
         player.GetComponent<Player>().whatIsGrounded = LayerMask.GetMask("Ground");
@@ -60,11 +64,13 @@ public class GodModeMenu : MonoBehaviour
 
     public void RemoveDialogues()
     {
+        menuButtonsSounds.Play();
         Destroy(dialogueTriggers);
     }
 
     public void RestartLevel()
     {
+        menuButtonsSounds.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
     }

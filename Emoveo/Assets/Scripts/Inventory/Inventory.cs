@@ -6,6 +6,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] slots;
     public GameObject inventory;
     private bool inventoryOn;
+    [SerializeField] private AudioSource inventorySound;
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class Inventory : MonoBehaviour
         if (!inventoryOn)
         {
             inventory.SetActive(!inventory.activeSelf);
+            inventorySound.Play();
         }
     }
     

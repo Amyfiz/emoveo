@@ -5,6 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     public bool pauseMenuOn;
     public GameObject pauseMenu;
+    [SerializeField] private AudioSource menuButtonsSounds;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            menuButtonsSounds.Play();
             ShowPauseMenu();
         }
     }
@@ -39,12 +41,14 @@ public class PauseMenu : MonoBehaviour
 
     public void Continue()
     {
+        menuButtonsSounds.Play();
         ShowPauseMenu();
     }
 
     public void QuitToMainMenu()
     { 
         Time.timeScale = 1;
+        menuButtonsSounds.Play();
         SceneManager.LoadScene("1_StartMenu");
     }
 }
