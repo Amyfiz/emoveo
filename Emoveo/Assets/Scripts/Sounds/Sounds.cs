@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sounds : MonoBehaviour
 {
     private AudioSource audioSource;
+    public AudioClip runningSound;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -12,7 +13,7 @@ public class Sounds : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-            audioSource.PlayOneShot();
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
+            audioSource.PlayOneShot(runningSound);
     }
 }

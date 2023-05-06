@@ -499,7 +499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260436895}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.7709, y: 121.57309, z: -2.9603052}
+  m_LocalPosition: {x: 194.06999, y: 121.57309, z: -2.9603052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1254,7 +1254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 337261161}
-  collider: {fileID: 0}
 --- !u!114 &337261167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,7 +1267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 337261161}
-  collider: {fileID: 0}
 --- !u!1 &340460021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 368524570}
-  collider: {fileID: 0}
 --- !u!58 &368524573
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1586,7 +1583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 368524570}
-  collider: {fileID: 0}
 --- !u!1 &370804499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,7 +3191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 654771492}
-  collider: {fileID: 0}
 --- !u!58 &654771495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3285,7 +3280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 654771492}
-  collider: {fileID: 0}
 --- !u!1 &664647923
 GameObject:
   m_ObjectHideFlags: 0
@@ -74515,7 +74509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 827911005}
-  collider: {fileID: 0}
 --- !u!58 &827911008
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -74605,7 +74598,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 827911005}
-  collider: {fileID: 0}
 --- !u!1 &830697605
 GameObject:
   m_ObjectHideFlags: 0
@@ -76042,7 +76034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077768880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.7709, y: 121.57309, z: -2.9603052}
+  m_LocalPosition: {x: 193.8706, y: 121.57309, z: -2.9603052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76321,7 +76313,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1147460835}
-  collider: {fileID: 0}
 --- !u!222 &1147460840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -76918,6 +76909,7 @@ GameObject:
   - component: {fileID: 1287308900}
   - component: {fileID: 1287308899}
   - component: {fileID: 1287308898}
+  - component: {fileID: 1287308904}
   m_Layer: 0
   m_Name: FollowingCamera
   m_TagString: MainCamera
@@ -77055,13 +77047,21 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287308897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.1, y: -262.6, z: -10}
+  m_LocalPosition: {x: 61.09694, y: -262.6209, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1287308904
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287308897}
+  m_Enabled: 1
 --- !u!4 &1287340136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4148599122800328642, guid: 742a55c37baf5a2449094bf3ce4e88df, type: 3}
@@ -78037,7 +78037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591513280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.7709, y: 121.57309, z: -2.9603052}
+  m_LocalPosition: {x: 193.8706, y: 121.57309, z: -2.9603052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78408,7 +78408,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1640173378}
-  collider: {fileID: 0}
 --- !u!58 &1640173381
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -78498,7 +78497,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1640173378}
-  collider: {fileID: 0}
 --- !u!1 &1665879980
 GameObject:
   m_ObjectHideFlags: 0
@@ -79264,7 +79262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1829456203}
-  collider: {fileID: 0}
 --- !u!58 &1829456206
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -79354,7 +79351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1829456203}
-  collider: {fileID: 0}
 --- !u!1 &1908180789
 GameObject:
   m_ObjectHideFlags: 0
@@ -79804,7 +79800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008588603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.77095, y: 121.57309, z: -2.9603052}
+  m_LocalPosition: {x: 193.97034, y: 121.57309, z: -2.9603052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
