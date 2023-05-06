@@ -6,7 +6,6 @@ public class LeverState : MonoBehaviour
     public GameObject lever;
     protected internal bool activated = false;
     private Collider2D collider;
-
     private void Awake()
     {
         collider = gameObject.GetComponent<Collider2D>();
@@ -19,7 +18,9 @@ public class LeverState : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 activated = true;
+                Destroy(gameObject);
             }
         }
     }
+    
 }
