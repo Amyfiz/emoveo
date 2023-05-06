@@ -3712,7 +3712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788005015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1798453, y: -38.819492, z: -10.56738}
+  m_LocalPosition: {x: -6.1798453, y: -38.8195, z: -10.56738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10433,6 +10433,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1868144761}
     - target: {fileID: 5662412888591699468, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+      propertyPath: inventorySound
+      value: 
+      objectReference: {fileID: 1003073897}
+    - target: {fileID: 5662412888591699468, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
       objectReference: {fileID: 1513018840}
@@ -10504,7 +10508,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1375458504709041301, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
 --- !u!114 &1003073896 stripped
@@ -10518,6 +10523,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67eef29f4fbb61544a1aaa7c8caf5844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1003073897 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8633207430093496797, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+  m_PrefabInstance: {fileID: 1003073895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1034379511
 GameObject:
   m_ObjectHideFlags: 0
@@ -15512,6 +15522,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5164023555922859641, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: menuButtonsSounds
+      value: 
+      objectReference: {fileID: 1868144762}
+    - target: {fileID: 6428352037304864461, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: m_Volume
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8096661508261044562, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
       propertyPath: player
       value: 
@@ -15520,6 +15538,10 @@ PrefabInstance:
       propertyPath: dialogueTriggers
       value: 
       objectReference: {fileID: 1618502277}
+    - target: {fileID: 8096661508261044562, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: menuButtonsSounds
+      value: 
+      objectReference: {fileID: 1868144762}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
@@ -15531,6 +15553,11 @@ GameObject:
 --- !u!1 &1868144761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3749026545422655592, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+  m_PrefabInstance: {fileID: 1868144759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1868144762 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6428352037304864461, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
   m_PrefabInstance: {fileID: 1868144759}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913653001

@@ -89667,6 +89667,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5164023555922859641, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: menuButtonsSounds
+      value: 
+      objectReference: {fileID: 150951099}
+    - target: {fileID: 6428352037304864461, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: m_Volume
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8096661508261044562, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
       propertyPath: player
       value: 
@@ -89675,12 +89683,21 @@ PrefabInstance:
       propertyPath: dialogueTriggers
       value: 
       objectReference: {fileID: 1412527696}
+    - target: {fileID: 8096661508261044562, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+      propertyPath: menuButtonsSounds
+      value: 
+      objectReference: {fileID: 150951099}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
 --- !u!95 &150951098 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2111811116774847225, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
+  m_PrefabInstance: {fileID: 150951097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &150951099 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6428352037304864461, guid: fa9e8149ca462614894565ae82bd1edf, type: 3}
   m_PrefabInstance: {fileID: 150951097}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &152937318
@@ -93604,6 +93621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 384138801}
+  doorSound: {fileID: 0}
 --- !u!58 &384138805
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94627,6 +94645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 577245276}
+  doorSound: {fileID: 0}
 --- !u!58 &577245280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97003,6 +97022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 884114544}
+  doorSound: {fileID: 0}
 --- !u!58 &884114548
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98150,6 +98170,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2063650353}
     - target: {fileID: 5662412888591699468, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+      propertyPath: inventorySound
+      value: 
+      objectReference: {fileID: 1127737828}
+    - target: {fileID: 5662412888591699468, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
       objectReference: {fileID: 561638178}
@@ -98221,12 +98245,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8633207430093496797, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+      propertyPath: m_Pitch
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633207430093496797, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1375458504709041301, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
 --- !u!4 &1127737827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5662412888591699470, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
+  m_PrefabInstance: {fileID: 1127737826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1127737828 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8633207430093496797, guid: 34f778c174a5cb04183a0e8ae27de913, type: 3}
   m_PrefabInstance: {fileID: 1127737826}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1148379460
@@ -98344,6 +98382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1148379460}
+  doorSound: {fileID: 0}
 --- !u!1 &1162214111
 GameObject:
   m_ObjectHideFlags: 0
@@ -99669,6 +99708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1318952192}
+  doorSound: {fileID: 0}
 --- !u!58 &1318952196
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101393,6 +101433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1554568210}
+  doorSound: {fileID: 0}
 --- !u!58 &1554568214
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101651,6 +101692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1590596450}
+  doorSound: {fileID: 0}
 --- !u!58 &1590596454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103695,6 +103737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1862660155}
+  doorSound: {fileID: 0}
 --- !u!58 &1862660159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104672,6 +104715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 1961716224}
+  doorSound: {fileID: 0}
 --- !u!58 &1961716228
 CircleCollider2D:
   m_ObjectHideFlags: 0

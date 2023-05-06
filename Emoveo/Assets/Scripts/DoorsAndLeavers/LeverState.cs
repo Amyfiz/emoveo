@@ -21,6 +21,7 @@ public class LeverState : MonoBehaviour
             {
                 activated = true;
                 doorSound.Play();
+                //Destroy(gameObject);
             }
         }
     }
